@@ -3,6 +3,32 @@ doctype html
 html
   include _partials/head.pug
   body
-    h1 My Site
+    h1 un machin
+    h1 #{ page.title }
     p Welcome to my super lame site.
+    p #{ theme.truc }
+    //- - console.log('page')
+    h3 tags
+    ul.tags
+      each tag in site.tags.toArray()
+        li= tag.name
+        each post in tag.posts.toArray()
+          p #{ post.title }
+
+    h3 categories
+    ul.categories
+      each cat in site.categories.toArray()
+        li= cat.name
+        each post in cat.posts.toArray()
+          p #{ post.title }
+
+    h3 posts
+    ul
+      each post in site.posts.sort('date', 'desc').toArray()
+        li= post.title
+          i= post.excerpt
+          b= post.truc
+          p #{ post.title }
+          each tag in post.tags.toArray()
+            i= tag.name
     include _partials/foot.pug
