@@ -2,12 +2,22 @@
 doctype html
 html
   include _partials/head.pug
-  body
+  body.content
+    hr
+    span.logo charlottethomas
+    hr
+
     h1 un machin
     h1 #{ page.title }
     p Welcome to my super lame site.
     p #{ theme.truc }
     //- - console.log('page')
+    h3 theme.menu
+    ul.tags
+      each item in theme.menu
+        li= item
+        - console.log(item)
+
     h3 tags
     ul.tags
       each tag in site.tags.toArray()

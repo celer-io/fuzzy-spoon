@@ -3,8 +3,8 @@ title: hola
 date: 2017-01-24 21:26:29
 excerpt: nosostros gatos beben agua
 tags:
-  - machin
-  - chose
+  machin: truc
+  chose: gata
 truc: kdskkdskkdskkdskkdskdskk
 categories:
   - lin
