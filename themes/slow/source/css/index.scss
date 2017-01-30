@@ -1,14 +1,27 @@
+$blue: #0000EE;
+$link: $blue;
+
 @import "../../node_modules/bulma/bulma";
 
 .logo {
-  font-family: 'EB Garamond', serif;
-  font-size: 4em;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  width: 3em;
-  display: block;
-  word-break: break-all;
-  text-align: justify;
-  margin: 140px;
-  text-transform: uppercase;
+
+	max-height: 70vh;
+	max-width: 150px;
+
+	&-typo {
+		font-family: 'EB Garamond', serif;
+		font-size: 4em;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		width: 3em;
+		display: block;
+		word-break: break-all;
+		text-align: justify;
+		margin: 140px;
+		text-transform: uppercase;
+	}
+}
+
+.wip {
+	margin-top: 20px;
 }

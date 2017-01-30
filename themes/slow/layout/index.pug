@@ -3,42 +3,52 @@ doctype html
 html
   include _partials/head.pug
   body.content
-    hr
-    span.logo charlottethomas
-    hr
+    div.hero
+      div.hero-body
+        div.container.has-text-centered
+          a(href="http://chathomas.wixsite.com/artstextiles")
+            img.logo(src='images/logo.png')
 
-    h1 un machin
-    h1 #{ page.title }
-    p Welcome to my super lame site.
-    p #{ theme.truc }
-    //- - console.log('page')
-    h3 theme.menu
-    ul.tags
-      each item in theme.menu
-        li= item
-        - console.log(item)
+          h4.wip Site en construction...
 
-    h3 tags
-    ul.tags
-      each tag in site.tags.toArray()
-        li= tag.name
-        each post in tag.posts.toArray()
-          p #{ post.title }
+          a(href="http://chathomas.wixsite.com/artstextiles") Aller ver l'ancien site
 
-    h3 categories
-    ul.categories
-      each cat in site.categories.toArray()
-        li= cat.name
-        each post in cat.posts.toArray()
-          p #{ post.title }
+    //- hr
+    //- span.logo charlottethomas
+    //- hr
 
-    h3 posts
-    ul
-      each post in site.posts.sort('date', 'desc').toArray()
-        li= post.title
-          i= post.excerpt
-          b= post.truc
-          p #{ post.title }
-          each tag in post.tags.toArray()
-            i= tag.name
+    //- h1 un machin
+    //- h1 #{ page.title }
+    //- p Welcome to my super lame site.
+    //- p #{ theme.truc }
+    //- //- - console.log('page')
+    //- h3 theme.menu
+    //- ul.tags
+    //-   each item in theme.menu
+    //-     li= item
+    //-     - console.log(item)
+
+    //- h3 tags
+    //- ul.tags
+    //-   each tag in site.tags.toArray()
+    //-     li= tag.name
+    //-     each post in tag.posts.toArray()
+    //-       p #{ post.title }
+
+    //- h3 categories
+    //- ul.categories
+    //-   each cat in site.categories.toArray()
+    //-     li= cat.name
+    //-     each post in cat.posts.toArray()
+    //-       p #{ post.title }
+
+    //- h3 posts
+    //- ul
+    //-   each post in site.posts.sort('date', 'desc').toArray()
+    //-     li= post.title
+    //-       i= post.excerpt
+    //-       b= post.truc
+    //-       p #{ post.title }
+    //-       each tag in post.tags.toArray()
+    //-         i= tag.name
     include _partials/foot.pug
