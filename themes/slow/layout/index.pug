@@ -2,14 +2,16 @@
 doctype html
 html
   include _partials/head.pug
-  body.container
-    div.columns.is-desktop
-      include _partials/menu.pug  
-      div.column.content
-        //- - console.log('page :', page)
-        h1 #{ page.title }
-        i #{ page.excerpt }
-        div!= page.content
+  body
+    div.section
+      div.container
+        div.columns.is-desktop
+          include _partials/menu.pug  
+          div.column.content
+            //- - console.log('page :', page)
+            h1 #{ page.title }
+            i #{ page.excerpt }
+            div!= page.content
           //- block content
     //- div.hero.hide
     //-   div.hero-body
