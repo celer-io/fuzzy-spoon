@@ -1,12 +1,14 @@
-head
-  - var pageTitle = page.title || config.subtitle || '';
-
+- function capitalizeFirstLetter(string) {
+-     return string.charAt(0).toUpperCase() + string.slice(1);
+- }
+- var pageTitle = (page.title ?  capitalizeFirstLetter(page.title) + ' - ' : '') + config.title;
+html(lang=config.language)
   meta(charset='UTF-8')
   meta(http-equiv="X-UA-Compatible" content="IE=edge")
-  meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+  //- meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
 
-  title Charlotte Thomas - Art Textile
-  link(rel="stylesheet" href="/css/index.css")
-  link(href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet")
+  title= pageTitle
+  link(rel="stylesheet" href = config.root + theme.stylesheet)
+  //- link(href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet")
   if theme.favicon
-    link(rel="icon" href=theme.favicon)
+    link(rel="icon" href = config.root + theme.favicon)

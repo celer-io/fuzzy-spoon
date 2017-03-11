@@ -1,0 +1,12 @@
+div.menu.column.is-2
+  each cat in site.categories.toArray()
+    p.menu-label= cat.name
+    ul.menu-list
+      each post in cat.posts.toArray()
+        li
+          - console.log('post :', post)
+          a(href='/' + post.canonical_path) #{ post.title }
+  p.menu-label
+  ul.menu-list
+    li
+      a(href='/about') About

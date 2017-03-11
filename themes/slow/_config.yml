@@ -1,5 +1,3 @@
-truc: machin
+favicon: images/C.png
 
-menu:
-  main: /
-  archives: /archives
+stylesheet: css/index.css

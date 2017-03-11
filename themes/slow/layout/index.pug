@@ -2,46 +2,31 @@
 doctype html
 html
   include _partials/head.pug
-  body.content
-    div.hero
-      div.hero-body
-        div.container.has-text-centered
-          a(href="http://chathomas.wixsite.com/artstextiles")
-            img.logo(src='images/logo.png')
+  body.container
+    div.columns.is-desktop
+      include _partials/menu.pug  
+      div.column.content
+        //- - console.log('page :', page)
+        h1 #{ page.title }
+        i #{ page.excerpt }
+        div!= page.content
+          //- block content
+    //- div.hero.hide
+    //-   div.hero-body
+    //-     div.container.has-text-centered
+          //- a(href="http://chathomas.wixsite.com/artstextiles")
+          //-   img.logo(src=config.root + 'images/logo.png')
 
-          h4.wip Site en construction...
-
-          a(href="http://chathomas.wixsite.com/artstextiles") Aller vers l'ancien site
-
-    //- hr
-    //- span.logo charlottethomas
-    //- hr
-
-    //- h1 un machin
-    //- h1 #{ page.title }
-    //- p Welcome to my super lame site.
-    //- p #{ theme.truc }
-    //- //- - console.log('page')
-    //- h3 theme.menu
-    //- ul.tags
-    //-   each item in theme.menu
-    //-     li= item
-    //-     - console.log(item)
-
-    //- h3 tags
-    //- ul.tags
-    //-   each tag in site.tags.toArray()
-    //-     li= tag.name
-    //-     each post in tag.posts.toArray()
-    //-       p #{ post.title }
-
-    //- h3 categories
-    //- ul.categories
-    //-   each cat in site.categories.toArray()
-    //-     li= cat.name
-    //-     each post in cat.posts.toArray()
-    //-       p #{ post.title }
-
+          //- h4.wip Site en construction...
+          //- 
+          //- a(href="http://chathomas.wixsite.com/artstextiles") Aller vers l'ancien site
+          //- 
+          //- - console.log('url2 :', url)
+          //- - console.log('post.canonical_path :', post.canonical_path)
+          //- {% post_link slug [title] %}
+          //- a(href="") a link = #{ post.title }
+          //- pre #{ page }
+    
     //- h3 posts
     //- ul
     //-   each post in site.posts.sort('date', 'desc').toArray()
