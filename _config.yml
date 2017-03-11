@@ -12,10 +12,11 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://charlottethomas.fr
-root: /
+# url: http://charlottethomas.fr
+# root: /
+url: https://crucialhawg.github.io/fuzzy-spoon/
+root: /fuzzy-spoon/
 permalink: :category/:title/
-# permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory

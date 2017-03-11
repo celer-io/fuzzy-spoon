@@ -4,9 +4,9 @@ div.menu.column.is-2
     ul.menu-list
       each post in cat.posts.toArray()
         li
-          - console.log('post :', post)
-          a(href='/' + post.canonical_path) #{ post.title }
-  p.menu-label
+          a(href= config.root + post.canonical_path) #{ post.title }
+  hr
   ul.menu-list
-    li
-      a(href='/about') About
+    each page in site.pages.toArray()
+      li
+        a(href= config.root + page.canonical_path) #{ page.title }
