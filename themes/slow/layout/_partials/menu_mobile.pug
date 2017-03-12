@@ -1,27 +1,14 @@
-//- div.menu.column.is-2
-//-   each cat in site.categories.toArray()
-//-     p.menu-label= cat.name
-//-     ul.menu-list
-//-       each post in cat.posts.toArray()
-//-         - console.log('post.title :', post.title)
-//-         li
-//-           a(href= config.root + post.canonical_path) #{ post.title }
-//-   hr
-//-   ul.menu-list
-//-     each page in site.pages.toArray()
-//-       li
-//-         a(href= config.root + page.canonical_path) #{ page.title }
-nav.nav
-  div.nav-left
-  div.nav-center
-    a.nav-item
-      img(src='http://bulma.io/images/bulma-logo.png')
-  span.nav-toggle
-    span
-    span
-    span
-  div.nav-right.nav-menu
-    each cat in site.categories.toArray()
-      span.nav-item= cat.name
-      each post in cat.posts.toArray()
-        a.nav-item(href= config.root + post.canonical_path) #{ post.title }
+div.container.is-hidden-tablet
+  nav.nav
+    div.nav-center
+      a.nav-item
+        img(src='http://bulma.io/images/bulma-logo.png')
+    span.nav-toggle
+      span
+      span
+      span
+    div.nav-right.nav-menu
+      each cat in site.categories.toArray()
+        span.nav-item= cat.name
+        each post in cat.posts.toArray()
+          a.nav-item(href= config.root + post.canonical_path) #{ post.title }
