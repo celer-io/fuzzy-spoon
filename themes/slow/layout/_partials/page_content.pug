@@ -1,4 +1,12 @@
 div.column.content
-  h1 #{ page.title }
-  i #{ page.excerpt }
+  //- h1 #{ page.title }
+  //- i #{ page.excerpt }
+  //- - console.log('page.images :', page.images)
+  if page.images && page.images.length
+    each image in page.images
+      div.columns
+        div.column
+          figure.image
+            img(src=image.url)
+        div.column.is-one-quarter!= image.description
   div!= page.content
