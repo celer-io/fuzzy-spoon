@@ -3,6 +3,7 @@ div.menu.column.is-2
     p.menu-label= cat.name
     ul.menu-list
       each post in cat.posts.toArray()
+        - console.log('post.title :', post.title)
         li
           a(href= config.root + post.canonical_path) #{ post.title }
   hr

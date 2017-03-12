@@ -3,39 +3,10 @@ doctype html
 html
   include _partials/head.pug
   body
-    div.section
+    include _partials/menu_mobile.pug  
+    section.section
       div.container
-        div.columns.is-desktop
-          include _partials/menu.pug  
-          div.column.content
-            //- - console.log('page :', page)
-            h1 #{ page.title }
-            i #{ page.excerpt }
-            div!= page.content
-          //- block content
-    //- div.hero.hide
-    //-   div.hero-body
-    //-     div.container.has-text-centered
-          //- a(href="http://chathomas.wixsite.com/artstextiles")
-          //-   img.logo(src=config.root + 'images/logo.png')
-
-          //- h4.wip Site en construction...
-          //- 
-          //- a(href="http://chathomas.wixsite.com/artstextiles") Aller vers l'ancien site
-          //- 
-          //- - console.log('url2 :', url)
-          //- - console.log('post.canonical_path :', post.canonical_path)
-          //- {% post_link slug [title] %}
-          //- a(href="") a link = #{ post.title }
-          //- pre #{ page }
-    
-    //- h3 posts
-    //- ul
-    //-   each post in site.posts.sort('date', 'desc').toArray()
-    //-     li= post.title
-    //-       i= post.excerpt
-    //-       b= post.truc
-    //-       p #{ post.title }
-    //-       each tag in post.tags.toArray()
-    //-         i= tag.name
+        div.columns
+          include _partials/menu_desktop.pug  
+          include _partials/page_content.pug
     include _partials/foot.pug

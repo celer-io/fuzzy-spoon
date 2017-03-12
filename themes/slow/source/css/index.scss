@@ -25,3 +25,10 @@
 .wip {
 	margin-top: 20px;
 }
+
+.content.image-container {
+	@extend .columns;
+	[figure].image {
+		@extend .column;
+	}
+}
