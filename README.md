@@ -22,12 +22,18 @@ Sources of charlottethomas.fr website (currently in development)
 
 ## Roadmap
 ### Now
-- [ ] Menu integration. (with js-toggle if needed)
-- [ ]	Handle inclusion of **works** (*as 'oeuvres'*) in page
-	- [ ]	Work's multiple images
-	- [ ]	Work's predefined layouts
+- [ ] Menu-desktop integration.
+- [ ] Menu-mobile integration.
+	- [X] css toggle
+- [X]	Handle inclusion of **works** (*as 'oeuvres'*) in page
+	- [X]	Work's multiple images
+	- [X]	Work's predefined layouts
 - [ ] Global style reset
+- [ ] Add Js ramda utils (for templating and client code)
 - [ ]	Implement ZoomBox feature
+- [ ]	Add show nav on scroll up
+
+### Later
 - [ ] Improve build-deploy-integ workflow (with tagging and shit)
 - [ ] Add build-deploy-prod workflow
 	- [ ] CNAME
@@ -36,6 +42,6 @@ Sources of charlottethomas.fr website (currently in development)
 - [ ] Reorganize git repos
 - [ ] Put theme in git submodule ??
 
-### Later
+### Far down the road
 - [ ] Develop deploy to integ/prod express api
 - [ ] Develop cms backoffice, integrated with api

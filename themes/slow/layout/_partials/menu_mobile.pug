@@ -1,13 +1,14 @@
 div.container.is-hidden-tablet
   nav.nav
     div.nav-center
-      a.nav-item
-        img(src='http://bulma.io/images/bulma-logo.png')
-    span.nav-toggle
+      a(href=config.root).nav-item
+        span.logo-mobile Charlotte Thomas
+    label(for='menu-toggle').nav-toggle
       span
       span
       span
-    div.nav-right.nav-menu
+    input#menu-toggle(type='checkbox')
+    div#menu.nav-right.nav-menu
       each cat in site.categories.toArray()
         span.nav-item= cat.name
         each post in cat.posts.toArray()

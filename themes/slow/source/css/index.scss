@@ -4,6 +4,7 @@
 @import "../../node_modules/bulma/bulma";
 
 .logo {
+	font-family: 'EB Garamond', serif;
 
 	max-height: 70vh;
 	max-width: 150px;
@@ -22,13 +23,82 @@
 	}
 }
 
-.wip {
-	margin-top: 20px;
+.logo-mobile {
+	color: black;
+	font-family: "Times New Roman", serif;
+	text-transform: uppercase;
+	font-size: 22px;
+	letter-spacing: 3px;
+	margin-right: -3.5rem;
 }
 
-.content.image-container {
-	@extend .columns;
-	[figure].image {
-		@extend .column;
+.menu .menu {
+	&-list a {
+		padding: 0;
+	}
+	&-label {
+		margin-bottom: 0;
+	}
+}
+
+nav.nav {
+	label {
+		cursor: pointer;
+	}
+	#menu-toggle {
+		display: none; /* hide the checkbox */
+	}
+	#menu-toggle:checked + #menu {
+		@extend .is-active;
+	}
+}
+
+
+.page-content {
+	.work {
+		.image {
+			margin-bottom: 0.5rem;
+		}
+		.cartel {
+			margin-top: 0;
+			font-size: 0.80em;
+			line-height: 1.4em;
+		}
+		@media (max-width: $tablet){
+			.cartel-container {
+				margin-top: -1.5rem;
+			}
+			.columns {
+				.column:not(:last-child){
+					padding-bottom: 0;
+				}
+				.column:not(:first-child) {
+					padding-top: 0;
+				}
+			}
+		}
+		@media (min-width: $tablet){
+			.cartel-container {
+				margin-left: -1rem;
+				position: relative;
+				.cartel {
+					position: absolute;
+					bottom: 1rem;
+				}
+			}
+			.columns {
+				.column{
+					padding-right: 0.25rem;
+					padding-left: 0.25rem;
+				}
+				.column:last-child {
+					padding-right: 0.75rem;
+				}
+				.column:first-child {
+					padding-left: 0.75rem;
+				}
+			}
+
+		}
 	}
 }

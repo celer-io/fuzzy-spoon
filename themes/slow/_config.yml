@@ -1,3 +1,5 @@
 favicon: images/C.png
+logo_desktop: images/logo_desktop.png
+logo_mobile: images/logo_mobile.png
 
 stylesheet: css/index.css

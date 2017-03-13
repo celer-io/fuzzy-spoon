@@ -1,12 +1,15 @@
 div.menu.column.is-one-quarter.is-hidden-mobile.is-2-widescreen
+  div.columns
+    div.column.is-half
+      figure.image
+        img(src=config.root + theme.logo_desktop)
   each cat in site.categories.toArray()
     p.menu-label= cat.name
     ul.menu-list
       each post in cat.posts.toArray()
-        - console.log('post.title :', post.title)
         li
           a(href= config.root + post.canonical_path) #{ post.title }
-  hr
+  br
   ul.menu-list
     each page in site.pages.toArray()
       li
