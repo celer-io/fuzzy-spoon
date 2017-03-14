@@ -46,10 +46,19 @@ nav.nav {
 		cursor: pointer;
 	}
 	#menu-toggle {
-		display: none; /* hide the checkbox */
+		display: none;
+	}
+	#menu {
+		max-height: 0;
+		display: block;
+		overflow: hidden;
+		-webkit-transition: max-height 200ms linear;
+		-moz-transition: max-height 200ms linear;
+		-ms-transition: max-height 200ms linear;
+		transition: max-height 200ms linear;
 	}
 	#menu-toggle:checked + #menu {
-		@extend .is-active;
+		max-height: 1000%;
 	}
 }
 
