@@ -28,6 +28,7 @@ Sources of charlottethomas.fr website (currently in development)
 - [X]	Handle inclusion of **works** (*as 'oeuvres'*) in page
 	- [X]	Work's multiple images
 	- [X]	Work's predefined layouts
+- [ ] Add home
 - [ ] Global style reset
 - [ ] Add Js ramda utils (for templating and client code)
 - [ ]	Implement ZoomBox feature
