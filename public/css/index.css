@@ -456,7 +456,7 @@ a.box:active {
   padding-right: 0.75em;
   text-align: center;
   white-space: nowrap; }
-  .button:focus, .button.is-focused, .button:active, .button.is-active, nav.nav #menu-toggle:checked + .button#menu {
+  .button:focus, .button.is-focused, .button:active, .button.is-active {
     outline: none; }
   .button[disabled], .button.is-disabled {
     pointer-events: none; }
@@ -499,7 +499,7 @@ a.box:active {
     border-color: #00d1b2;
     box-shadow: 0 0 0.5em rgba(0, 209, 178, 0.25);
     color: #363636; }
-  .button:active, .button.is-active, nav.nav #menu-toggle:checked + .button#menu {
+  .button:active, .button.is-active {
     border-color: #4a4a4a;
     box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
     color: #363636; }
@@ -508,7 +508,7 @@ a.box:active {
     border-color: transparent;
     color: #4a4a4a;
     text-decoration: underline; }
-    .button.is-link:hover, .button.is-link.is-hovered, .button.is-link:focus, .button.is-link.is-focused, .button.is-link:active, .button.is-link.is-active, nav.nav #menu-toggle:checked + .button.is-link#menu {
+    .button.is-link:hover, .button.is-link.is-hovered, .button.is-link:focus, .button.is-link.is-focused, .button.is-link:active, .button.is-link.is-active {
       background-color: whitesmoke;
       color: #363636; }
   .button.is-white {
@@ -523,7 +523,7 @@ a.box:active {
       border-color: transparent;
       box-shadow: 0 0 0.5em rgba(255, 255, 255, 0.25);
       color: #0a0a0a; }
-    .button.is-white:active, .button.is-white.is-active, nav.nav #menu-toggle:checked + .button.is-white#menu {
+    .button.is-white:active, .button.is-white.is-active {
       background-color: #f2f2f2;
       border-color: transparent;
       box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
@@ -562,7 +562,7 @@ a.box:active {
       border-color: transparent;
       box-shadow: 0 0 0.5em rgba(10, 10, 10, 0.25);
       color: white; }
-    .button.is-black:active, .button.is-black.is-active, nav.nav #menu-toggle:checked + .button.is-black#menu {
+    .button.is-black:active, .button.is-black.is-active {
       background-color: black;
       border-color: transparent;
       box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
@@ -601,7 +601,7 @@ a.box:active {
       border-color: transparent;
       box-shadow: 0 0 0.5em rgba(245, 245, 245, 0.25);
       color: #363636; }
-    .button.is-light:active, .button.is-light.is-active, nav.nav #menu-toggle:checked + .button.is-light#menu {
+    .button.is-light:active, .button.is-light.is-active {
       background-color: #e8e8e8;
       border-color: transparent;
       box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
@@ -640,7 +640,7 @@ a.box:active {
       border-color: transparent;
       box-shadow: 0 0 0.5em rgba(54, 54, 54, 0.25);
       color: whitesmoke; }
-    .button.is-dark:active, .button.is-dark.is-active, nav.nav #menu-toggle:checked + .button.is-dark#menu {
+    .button.is-dark:active, .button.is-dark.is-active {
       background-color: #292929;
       border-color: transparent;
       box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
@@ -679,7 +679,7 @@ a.box:active {
       border-color: transparent;
       box-shadow: 0 0 0.5em rgba(0, 209, 178, 0.25);
       color: #fff; }
-    .button.is-primary:active, .button.is-primary.is-active, nav.nav #menu-toggle:checked + .button.is-primary#menu {
+    .button.is-primary:active, .button.is-primary.is-active {
       background-color: #00b89c;
       border-color: transparent;
       box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
@@ -718,7 +718,7 @@ a.box:active {
       border-color: transparent;
       box-shadow: 0 0 0.5em rgba(50, 115, 220, 0.25);
       color: #fff; }
-    .button.is-info:active, .button.is-info.is-active, nav.nav #menu-toggle:checked + .button.is-info#menu {
+    .button.is-info:active, .button.is-info.is-active {
       background-color: #2366d1;
       border-color: transparent;
       box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
@@ -757,7 +757,7 @@ a.box:active {
       border-color: transparent;
       box-shadow: 0 0 0.5em rgba(35, 209, 96, 0.25);
       color: #fff; }
-    .button.is-success:active, .button.is-success.is-active, nav.nav #menu-toggle:checked + .button.is-success#menu {
+    .button.is-success:active, .button.is-success.is-active {
       background-color: #20bc56;
       border-color: transparent;
       box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
@@ -796,7 +796,7 @@ a.box:active {
       border-color: transparent;
       box-shadow: 0 0 0.5em rgba(255, 221, 87, 0.25);
       color: rgba(0, 0, 0, 0.7); }
-    .button.is-warning:active, .button.is-warning.is-active, nav.nav #menu-toggle:checked + .button.is-warning#menu {
+    .button.is-warning:active, .button.is-warning.is-active {
       background-color: #ffd83d;
       border-color: transparent;
       box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
@@ -835,7 +835,7 @@ a.box:active {
       border-color: transparent;
       box-shadow: 0 0 0.5em rgba(255, 56, 96, 0.25);
       color: #fff; }
-    .button.is-danger:active, .button.is-danger.is-active, nav.nav #menu-toggle:checked + .button.is-danger#menu {
+    .button.is-danger:active, .button.is-danger.is-active {
       background-color: #ff1f4b;
       border-color: transparent;
       box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
@@ -1103,12 +1103,11 @@ a.box:active {
   box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
   max-width: 100%;
   width: 100%; }
-  .input:focus, .input.is-focused, .input:active, .input.is-active, nav.nav #menu-toggle:checked + .input#menu,
+  .input:focus, .input.is-focused, .input:active, .input.is-active,
   .textarea:focus,
   .textarea.is-focused,
   .textarea:active,
-  .textarea.is-active,
-  nav.nav #menu-toggle:checked + .textarea#menu {
+  .textarea.is-active {
     outline: none; }
   .input[disabled], .input.is-disabled,
   .textarea[disabled],
@@ -1118,12 +1117,11 @@ a.box:active {
   .textarea:hover,
   .textarea.is-hovered {
     border-color: #b5b5b5; }
-  .input:focus, .input.is-focused, .input:active, .input.is-active, nav.nav #menu-toggle:checked + .input#menu,
+  .input:focus, .input.is-focused, .input:active, .input.is-active,
   .textarea:focus,
   .textarea.is-focused,
   .textarea:active,
-  .textarea.is-active,
-  nav.nav #menu-toggle:checked + .textarea#menu {
+  .textarea.is-active {
     border-color: #00d1b2; }
   .input[disabled], .input.is-disabled,
   .textarea[disabled],
@@ -1278,13 +1276,13 @@ a.box:active {
     font-size: 1em;
     outline: none;
     padding-right: 2.5em; }
-    .select select:focus, .select select.is-focused, .select select:active, .select select.is-active, .select nav.nav #menu-toggle:checked + select#menu, nav.nav .select #menu-toggle:checked + select#menu {
+    .select select:focus, .select select.is-focused, .select select:active, .select select.is-active {
       outline: none; }
     .select select[disabled], .select select.is-disabled {
       pointer-events: none; }
     .select select:hover, .select select.is-hovered {
       border-color: #b5b5b5; }
-    .select select:focus, .select select.is-focused, .select select:active, .select select.is-active, .select nav.nav #menu-toggle:checked + select#menu, nav.nav .select #menu-toggle:checked + select#menu {
+    .select select:focus, .select select.is-focused, .select select:active, .select select.is-active {
       border-color: #00d1b2; }
     .select select[disabled], .select select.is-disabled {
       background-color: whitesmoke;
@@ -2132,7 +2130,7 @@ a.box:active {
     .menu-list a:hover {
       background-color: whitesmoke;
       color: #00d1b2; }
-    .menu-list a.is-active, .menu-list nav.nav #menu-toggle:checked + a#menu, nav.nav .menu-list #menu-toggle:checked + a#menu {
+    .menu-list a.is-active {
       background-color: #00d1b2;
       color: #fff; }
   .menu-list li ul {
@@ -2401,7 +2399,7 @@ a.box:active {
   overflow: hidden;
   position: fixed;
   z-index: 1986; }
-  .modal.is-active, nav.nav #menu-toggle:checked + .modal#menu {
+  .modal.is-active {
     display: flex; }
 
 .nav-toggle {
@@ -2429,15 +2427,15 @@ a.box:active {
       margin-top: 4px; }
   .nav-toggle:hover {
     background-color: whitesmoke; }
-  .nav-toggle.is-active span, nav.nav #menu-toggle:checked + .nav-toggle#menu span {
+  .nav-toggle.is-active span {
     background-color: #00d1b2; }
-    .nav-toggle.is-active span:nth-child(1), nav.nav #menu-toggle:checked + .nav-toggle#menu span:nth-child(1) {
+    .nav-toggle.is-active span:nth-child(1) {
       margin-left: -5px;
       transform: rotate(45deg);
       transform-origin: left top; }
-    .nav-toggle.is-active span:nth-child(2), nav.nav #menu-toggle:checked + .nav-toggle#menu span:nth-child(2) {
+    .nav-toggle.is-active span:nth-child(2) {
       opacity: 0; }
-    .nav-toggle.is-active span:nth-child(3), nav.nav #menu-toggle:checked + .nav-toggle#menu span:nth-child(3) {
+    .nav-toggle.is-active span:nth-child(3) {
       margin-left: -5px;
       transform: rotate(-45deg);
       transform-origin: left bottom; }
@@ -2474,9 +2472,8 @@ a.nav-item {
   .nav-item a:hover,
   a.nav-item:hover {
     color: #363636; }
-  .nav-item a.is-active, .nav-item nav.nav #menu-toggle:checked + a#menu, nav.nav .nav-item #menu-toggle:checked + a#menu,
-  a.nav-item.is-active,
-  nav.nav #menu-toggle:checked + a.nav-item#menu {
+  .nav-item a.is-active,
+  a.nav-item.is-active {
     color: #363636; }
   .nav-item a.is-tab,
   a.nav-item.is-tab {
@@ -2490,9 +2487,8 @@ a.nav-item {
     a.nav-item.is-tab:hover {
       border-bottom-color: #00d1b2;
       border-top-color: transparent; }
-    .nav-item a.is-tab.is-active, .nav-item nav.nav #menu-toggle:checked + a.is-tab#menu, nav.nav .nav-item #menu-toggle:checked + a.is-tab#menu,
-    a.nav-item.is-tab.is-active,
-    nav.nav #menu-toggle:checked + a.nav-item.is-tab#menu {
+    .nav-item a.is-tab.is-active,
+    a.nav-item.is-tab.is-active {
       border-bottom: 3px solid #00d1b2;
       color: #00d1b2;
       padding-bottom: calc(0.5rem - 3px); }
@@ -2513,7 +2509,7 @@ a.nav-item {
     .nav-menu .nav-item {
       border-top: 1px solid rgba(219, 219, 219, 0.5);
       padding: 0.75rem; }
-    .nav-menu.is-active, nav.nav #menu-toggle:checked + .nav-menu#menu {
+    .nav-menu.is-active {
       display: block; } }
 
 @media screen and (min-width: 769px) and (max-width: 999px) {
@@ -2601,22 +2597,19 @@ a.nav-item {
   padding-right: 0.5em;
   justify-content: center;
   text-align: center; }
-  .pagination-previous:focus, .pagination-previous.is-focused, .pagination-previous:active, .pagination-previous.is-active, nav.nav #menu-toggle:checked + .pagination-previous#menu,
+  .pagination-previous:focus, .pagination-previous.is-focused, .pagination-previous:active, .pagination-previous.is-active,
   .pagination-next:focus,
   .pagination-next.is-focused,
   .pagination-next:active,
   .pagination-next.is-active,
-  nav.nav #menu-toggle:checked + .pagination-next#menu,
   .pagination-link:focus,
   .pagination-link.is-focused,
   .pagination-link:active,
   .pagination-link.is-active,
-  nav.nav #menu-toggle:checked + .pagination-link#menu,
   .pagination-ellipsis:focus,
   .pagination-ellipsis.is-focused,
   .pagination-ellipsis:active,
-  .pagination-ellipsis.is-active,
-  nav.nav #menu-toggle:checked + .pagination-ellipsis#menu {
+  .pagination-ellipsis.is-active {
     outline: none; }
   .pagination-previous[disabled], .pagination-previous.is-disabled,
   .pagination-next[disabled],
@@ -2755,7 +2748,7 @@ a.nav-item {
     border-bottom: 1px solid #dbdbdb;
     margin-bottom: -1px;
     padding: 0.5em; }
-    .panel-tabs a.is-active, .panel-tabs nav.nav #menu-toggle:checked + a#menu, nav.nav .panel-tabs #menu-toggle:checked + a#menu {
+    .panel-tabs a.is-active {
       border-bottom-color: #4a4a4a;
       color: #363636; }
 
@@ -2776,10 +2769,10 @@ a.nav-item {
     flex-grow: 1;
     flex-shrink: 1;
     width: 100%; }
-  .panel-block.is-active, nav.nav #menu-toggle:checked + .panel-block#menu {
+  .panel-block.is-active {
     border-left-color: #00d1b2;
     color: #363636; }
-    .panel-block.is-active .panel-icon, nav.nav #menu-toggle:checked + .panel-block#menu .panel-icon {
+    .panel-block.is-active .panel-icon {
       color: #00d1b2; }
 
 a.panel-block,
@@ -2832,7 +2825,7 @@ label.panel-block {
       color: #363636; }
   .tabs li {
     display: block; }
-    .tabs li.is-active a, .tabs nav.nav #menu-toggle:checked + li#menu a, nav.nav .tabs #menu-toggle:checked + li#menu a {
+    .tabs li.is-active a {
       border-bottom-color: #00d1b2;
       color: #00d1b2; }
   .tabs ul {
@@ -2866,7 +2859,7 @@ label.panel-block {
     .tabs.is-boxed a:hover {
       background-color: whitesmoke;
       border-bottom-color: #dbdbdb; }
-  .tabs.is-boxed li.is-active a, .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a, nav.nav .tabs.is-boxed #menu-toggle:checked + li#menu a {
+  .tabs.is-boxed li.is-active a {
     background-color: white;
     border-color: #dbdbdb;
     border-bottom-color: transparent !important; }
@@ -2887,7 +2880,7 @@ label.panel-block {
     border-radius: 3px 0 0 3px; }
   .tabs.is-toggle li:last-child a {
     border-radius: 0 3px 3px 0; }
-  .tabs.is-toggle li.is-active a, .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a, nav.nav .tabs.is-toggle #menu-toggle:checked + li#menu a {
+  .tabs.is-toggle li.is-active a {
     background-color: #00d1b2;
     border-color: #00d1b2;
     color: #fff;
@@ -3548,24 +3541,22 @@ label.panel-block {
     .hero.is-white a.nav-item,
     .hero.is-white .nav-item a:not(.button) {
       color: rgba(10, 10, 10, 0.7); }
-      .hero.is-white a.nav-item:hover, .hero.is-white a.nav-item.is-active, .hero.is-white nav.nav #menu-toggle:checked + a.nav-item#menu, nav.nav .hero.is-white #menu-toggle:checked + a.nav-item#menu,
+      .hero.is-white a.nav-item:hover, .hero.is-white a.nav-item.is-active,
       .hero.is-white .nav-item a:not(.button):hover,
-      .hero.is-white .nav-item a:not(.button).is-active,
-      .hero.is-white .nav-item nav.nav #menu-toggle:checked + a#menu:not(.button), nav.nav
-      .hero.is-white .nav-item #menu-toggle:checked + a#menu:not(.button) {
+      .hero.is-white .nav-item a:not(.button).is-active {
         color: #0a0a0a; }
     .hero.is-white .tabs a {
       color: #0a0a0a;
       opacity: 0.9; }
       .hero.is-white .tabs a:hover {
         opacity: 1; }
-    .hero.is-white .tabs li.is-active a, .hero.is-white .tabs nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-white .tabs #menu-toggle:checked + li#menu a {
+    .hero.is-white .tabs li.is-active a {
       opacity: 1; }
     .hero.is-white .tabs.is-boxed a, .hero.is-white .tabs.is-toggle a {
       color: #0a0a0a; }
       .hero.is-white .tabs.is-boxed a:hover, .hero.is-white .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-white .tabs.is-boxed li.is-active a, .hero.is-white .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-white .tabs.is-boxed #menu-toggle:checked + li#menu a, .hero.is-white .tabs.is-boxed li.is-active a:hover, .hero.is-white .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a:hover, nav.nav .hero.is-white .tabs.is-boxed #menu-toggle:checked + li#menu a:hover, .hero.is-white .tabs.is-toggle li.is-active a, .hero.is-white .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-white .tabs.is-toggle #menu-toggle:checked + li#menu a, .hero.is-white .tabs.is-toggle li.is-active a:hover, .hero.is-white .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a:hover, nav.nav .hero.is-white .tabs.is-toggle #menu-toggle:checked + li#menu a:hover {
+    .hero.is-white .tabs.is-boxed li.is-active a, .hero.is-white .tabs.is-boxed li.is-active a:hover, .hero.is-white .tabs.is-toggle li.is-active a, .hero.is-white .tabs.is-toggle li.is-active a:hover {
       background-color: #0a0a0a;
       border-color: #0a0a0a;
       color: white; }
@@ -3576,7 +3567,7 @@ label.panel-block {
         background-color: #0a0a0a; }
       .hero.is-white .nav-toggle:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-      .hero.is-white .nav-toggle.is-active span, .hero.is-white nav.nav #menu-toggle:checked + .nav-toggle#menu span, nav.nav .hero.is-white #menu-toggle:checked + .nav-toggle#menu span {
+      .hero.is-white .nav-toggle.is-active span {
         background-color: #0a0a0a; }
       .hero.is-white .nav-menu .nav-item {
         border-top-color: rgba(10, 10, 10, 0.2); } }
@@ -3601,24 +3592,22 @@ label.panel-block {
     .hero.is-black a.nav-item,
     .hero.is-black .nav-item a:not(.button) {
       color: rgba(255, 255, 255, 0.7); }
-      .hero.is-black a.nav-item:hover, .hero.is-black a.nav-item.is-active, .hero.is-black nav.nav #menu-toggle:checked + a.nav-item#menu, nav.nav .hero.is-black #menu-toggle:checked + a.nav-item#menu,
+      .hero.is-black a.nav-item:hover, .hero.is-black a.nav-item.is-active,
       .hero.is-black .nav-item a:not(.button):hover,
-      .hero.is-black .nav-item a:not(.button).is-active,
-      .hero.is-black .nav-item nav.nav #menu-toggle:checked + a#menu:not(.button), nav.nav
-      .hero.is-black .nav-item #menu-toggle:checked + a#menu:not(.button) {
+      .hero.is-black .nav-item a:not(.button).is-active {
         color: white; }
     .hero.is-black .tabs a {
       color: white;
       opacity: 0.9; }
       .hero.is-black .tabs a:hover {
         opacity: 1; }
-    .hero.is-black .tabs li.is-active a, .hero.is-black .tabs nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-black .tabs #menu-toggle:checked + li#menu a {
+    .hero.is-black .tabs li.is-active a {
       opacity: 1; }
     .hero.is-black .tabs.is-boxed a, .hero.is-black .tabs.is-toggle a {
       color: white; }
       .hero.is-black .tabs.is-boxed a:hover, .hero.is-black .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-black .tabs.is-boxed li.is-active a, .hero.is-black .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-black .tabs.is-boxed #menu-toggle:checked + li#menu a, .hero.is-black .tabs.is-boxed li.is-active a:hover, .hero.is-black .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a:hover, nav.nav .hero.is-black .tabs.is-boxed #menu-toggle:checked + li#menu a:hover, .hero.is-black .tabs.is-toggle li.is-active a, .hero.is-black .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-black .tabs.is-toggle #menu-toggle:checked + li#menu a, .hero.is-black .tabs.is-toggle li.is-active a:hover, .hero.is-black .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a:hover, nav.nav .hero.is-black .tabs.is-toggle #menu-toggle:checked + li#menu a:hover {
+    .hero.is-black .tabs.is-boxed li.is-active a, .hero.is-black .tabs.is-boxed li.is-active a:hover, .hero.is-black .tabs.is-toggle li.is-active a, .hero.is-black .tabs.is-toggle li.is-active a:hover {
       background-color: white;
       border-color: white;
       color: #0a0a0a; }
@@ -3629,7 +3618,7 @@ label.panel-block {
         background-color: white; }
       .hero.is-black .nav-toggle:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-      .hero.is-black .nav-toggle.is-active span, .hero.is-black nav.nav #menu-toggle:checked + .nav-toggle#menu span, nav.nav .hero.is-black #menu-toggle:checked + .nav-toggle#menu span {
+      .hero.is-black .nav-toggle.is-active span {
         background-color: white; }
       .hero.is-black .nav-menu .nav-item {
         border-top-color: rgba(255, 255, 255, 0.2); } }
@@ -3654,24 +3643,22 @@ label.panel-block {
     .hero.is-light a.nav-item,
     .hero.is-light .nav-item a:not(.button) {
       color: rgba(54, 54, 54, 0.7); }
-      .hero.is-light a.nav-item:hover, .hero.is-light a.nav-item.is-active, .hero.is-light nav.nav #menu-toggle:checked + a.nav-item#menu, nav.nav .hero.is-light #menu-toggle:checked + a.nav-item#menu,
+      .hero.is-light a.nav-item:hover, .hero.is-light a.nav-item.is-active,
       .hero.is-light .nav-item a:not(.button):hover,
-      .hero.is-light .nav-item a:not(.button).is-active,
-      .hero.is-light .nav-item nav.nav #menu-toggle:checked + a#menu:not(.button), nav.nav
-      .hero.is-light .nav-item #menu-toggle:checked + a#menu:not(.button) {
+      .hero.is-light .nav-item a:not(.button).is-active {
         color: #363636; }
     .hero.is-light .tabs a {
       color: #363636;
       opacity: 0.9; }
       .hero.is-light .tabs a:hover {
         opacity: 1; }
-    .hero.is-light .tabs li.is-active a, .hero.is-light .tabs nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-light .tabs #menu-toggle:checked + li#menu a {
+    .hero.is-light .tabs li.is-active a {
       opacity: 1; }
     .hero.is-light .tabs.is-boxed a, .hero.is-light .tabs.is-toggle a {
       color: #363636; }
       .hero.is-light .tabs.is-boxed a:hover, .hero.is-light .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-light .tabs.is-boxed li.is-active a, .hero.is-light .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-light .tabs.is-boxed #menu-toggle:checked + li#menu a, .hero.is-light .tabs.is-boxed li.is-active a:hover, .hero.is-light .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a:hover, nav.nav .hero.is-light .tabs.is-boxed #menu-toggle:checked + li#menu a:hover, .hero.is-light .tabs.is-toggle li.is-active a, .hero.is-light .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-light .tabs.is-toggle #menu-toggle:checked + li#menu a, .hero.is-light .tabs.is-toggle li.is-active a:hover, .hero.is-light .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a:hover, nav.nav .hero.is-light .tabs.is-toggle #menu-toggle:checked + li#menu a:hover {
+    .hero.is-light .tabs.is-boxed li.is-active a, .hero.is-light .tabs.is-boxed li.is-active a:hover, .hero.is-light .tabs.is-toggle li.is-active a, .hero.is-light .tabs.is-toggle li.is-active a:hover {
       background-color: #363636;
       border-color: #363636;
       color: whitesmoke; }
@@ -3682,7 +3669,7 @@ label.panel-block {
         background-color: #363636; }
       .hero.is-light .nav-toggle:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-      .hero.is-light .nav-toggle.is-active span, .hero.is-light nav.nav #menu-toggle:checked + .nav-toggle#menu span, nav.nav .hero.is-light #menu-toggle:checked + .nav-toggle#menu span {
+      .hero.is-light .nav-toggle.is-active span {
         background-color: #363636; }
       .hero.is-light .nav-menu .nav-item {
         border-top-color: rgba(54, 54, 54, 0.2); } }
@@ -3707,24 +3694,22 @@ label.panel-block {
     .hero.is-dark a.nav-item,
     .hero.is-dark .nav-item a:not(.button) {
       color: rgba(245, 245, 245, 0.7); }
-      .hero.is-dark a.nav-item:hover, .hero.is-dark a.nav-item.is-active, .hero.is-dark nav.nav #menu-toggle:checked + a.nav-item#menu, nav.nav .hero.is-dark #menu-toggle:checked + a.nav-item#menu,
+      .hero.is-dark a.nav-item:hover, .hero.is-dark a.nav-item.is-active,
       .hero.is-dark .nav-item a:not(.button):hover,
-      .hero.is-dark .nav-item a:not(.button).is-active,
-      .hero.is-dark .nav-item nav.nav #menu-toggle:checked + a#menu:not(.button), nav.nav
-      .hero.is-dark .nav-item #menu-toggle:checked + a#menu:not(.button) {
+      .hero.is-dark .nav-item a:not(.button).is-active {
         color: whitesmoke; }
     .hero.is-dark .tabs a {
       color: whitesmoke;
       opacity: 0.9; }
       .hero.is-dark .tabs a:hover {
         opacity: 1; }
-    .hero.is-dark .tabs li.is-active a, .hero.is-dark .tabs nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-dark .tabs #menu-toggle:checked + li#menu a {
+    .hero.is-dark .tabs li.is-active a {
       opacity: 1; }
     .hero.is-dark .tabs.is-boxed a, .hero.is-dark .tabs.is-toggle a {
       color: whitesmoke; }
       .hero.is-dark .tabs.is-boxed a:hover, .hero.is-dark .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-dark .tabs.is-boxed li.is-active a, .hero.is-dark .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-dark .tabs.is-boxed #menu-toggle:checked + li#menu a, .hero.is-dark .tabs.is-boxed li.is-active a:hover, .hero.is-dark .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a:hover, nav.nav .hero.is-dark .tabs.is-boxed #menu-toggle:checked + li#menu a:hover, .hero.is-dark .tabs.is-toggle li.is-active a, .hero.is-dark .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-dark .tabs.is-toggle #menu-toggle:checked + li#menu a, .hero.is-dark .tabs.is-toggle li.is-active a:hover, .hero.is-dark .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a:hover, nav.nav .hero.is-dark .tabs.is-toggle #menu-toggle:checked + li#menu a:hover {
+    .hero.is-dark .tabs.is-boxed li.is-active a, .hero.is-dark .tabs.is-boxed li.is-active a:hover, .hero.is-dark .tabs.is-toggle li.is-active a, .hero.is-dark .tabs.is-toggle li.is-active a:hover {
       background-color: whitesmoke;
       border-color: whitesmoke;
       color: #363636; }
@@ -3735,7 +3720,7 @@ label.panel-block {
         background-color: whitesmoke; }
       .hero.is-dark .nav-toggle:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-      .hero.is-dark .nav-toggle.is-active span, .hero.is-dark nav.nav #menu-toggle:checked + .nav-toggle#menu span, nav.nav .hero.is-dark #menu-toggle:checked + .nav-toggle#menu span {
+      .hero.is-dark .nav-toggle.is-active span {
         background-color: whitesmoke; }
       .hero.is-dark .nav-menu .nav-item {
         border-top-color: rgba(245, 245, 245, 0.2); } }
@@ -3760,24 +3745,22 @@ label.panel-block {
     .hero.is-primary a.nav-item,
     .hero.is-primary .nav-item a:not(.button) {
       color: rgba(255, 255, 255, 0.7); }
-      .hero.is-primary a.nav-item:hover, .hero.is-primary a.nav-item.is-active, .hero.is-primary nav.nav #menu-toggle:checked + a.nav-item#menu, nav.nav .hero.is-primary #menu-toggle:checked + a.nav-item#menu,
+      .hero.is-primary a.nav-item:hover, .hero.is-primary a.nav-item.is-active,
       .hero.is-primary .nav-item a:not(.button):hover,
-      .hero.is-primary .nav-item a:not(.button).is-active,
-      .hero.is-primary .nav-item nav.nav #menu-toggle:checked + a#menu:not(.button), nav.nav
-      .hero.is-primary .nav-item #menu-toggle:checked + a#menu:not(.button) {
+      .hero.is-primary .nav-item a:not(.button).is-active {
         color: #fff; }
     .hero.is-primary .tabs a {
       color: #fff;
       opacity: 0.9; }
       .hero.is-primary .tabs a:hover {
         opacity: 1; }
-    .hero.is-primary .tabs li.is-active a, .hero.is-primary .tabs nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-primary .tabs #menu-toggle:checked + li#menu a {
+    .hero.is-primary .tabs li.is-active a {
       opacity: 1; }
     .hero.is-primary .tabs.is-boxed a, .hero.is-primary .tabs.is-toggle a {
       color: #fff; }
       .hero.is-primary .tabs.is-boxed a:hover, .hero.is-primary .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-primary .tabs.is-boxed li.is-active a, .hero.is-primary .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-primary .tabs.is-boxed #menu-toggle:checked + li#menu a, .hero.is-primary .tabs.is-boxed li.is-active a:hover, .hero.is-primary .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a:hover, nav.nav .hero.is-primary .tabs.is-boxed #menu-toggle:checked + li#menu a:hover, .hero.is-primary .tabs.is-toggle li.is-active a, .hero.is-primary .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-primary .tabs.is-toggle #menu-toggle:checked + li#menu a, .hero.is-primary .tabs.is-toggle li.is-active a:hover, .hero.is-primary .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a:hover, nav.nav .hero.is-primary .tabs.is-toggle #menu-toggle:checked + li#menu a:hover {
+    .hero.is-primary .tabs.is-boxed li.is-active a, .hero.is-primary .tabs.is-boxed li.is-active a:hover, .hero.is-primary .tabs.is-toggle li.is-active a, .hero.is-primary .tabs.is-toggle li.is-active a:hover {
       background-color: #fff;
       border-color: #fff;
       color: #00d1b2; }
@@ -3788,7 +3771,7 @@ label.panel-block {
         background-color: #fff; }
       .hero.is-primary .nav-toggle:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-      .hero.is-primary .nav-toggle.is-active span, .hero.is-primary nav.nav #menu-toggle:checked + .nav-toggle#menu span, nav.nav .hero.is-primary #menu-toggle:checked + .nav-toggle#menu span {
+      .hero.is-primary .nav-toggle.is-active span {
         background-color: #fff; }
       .hero.is-primary .nav-menu .nav-item {
         border-top-color: rgba(255, 255, 255, 0.2); } }
@@ -3813,24 +3796,22 @@ label.panel-block {
     .hero.is-info a.nav-item,
     .hero.is-info .nav-item a:not(.button) {
       color: rgba(255, 255, 255, 0.7); }
-      .hero.is-info a.nav-item:hover, .hero.is-info a.nav-item.is-active, .hero.is-info nav.nav #menu-toggle:checked + a.nav-item#menu, nav.nav .hero.is-info #menu-toggle:checked + a.nav-item#menu,
+      .hero.is-info a.nav-item:hover, .hero.is-info a.nav-item.is-active,
       .hero.is-info .nav-item a:not(.button):hover,
-      .hero.is-info .nav-item a:not(.button).is-active,
-      .hero.is-info .nav-item nav.nav #menu-toggle:checked + a#menu:not(.button), nav.nav
-      .hero.is-info .nav-item #menu-toggle:checked + a#menu:not(.button) {
+      .hero.is-info .nav-item a:not(.button).is-active {
         color: #fff; }
     .hero.is-info .tabs a {
       color: #fff;
       opacity: 0.9; }
       .hero.is-info .tabs a:hover {
         opacity: 1; }
-    .hero.is-info .tabs li.is-active a, .hero.is-info .tabs nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-info .tabs #menu-toggle:checked + li#menu a {
+    .hero.is-info .tabs li.is-active a {
       opacity: 1; }
     .hero.is-info .tabs.is-boxed a, .hero.is-info .tabs.is-toggle a {
       color: #fff; }
       .hero.is-info .tabs.is-boxed a:hover, .hero.is-info .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-info .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-info .tabs.is-boxed #menu-toggle:checked + li#menu a, .hero.is-info .tabs.is-boxed li.is-active a:hover, .hero.is-info .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a:hover, nav.nav .hero.is-info .tabs.is-boxed #menu-toggle:checked + li#menu a:hover, .hero.is-info .tabs.is-toggle li.is-active a, .hero.is-info .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-info .tabs.is-toggle #menu-toggle:checked + li#menu a, .hero.is-info .tabs.is-toggle li.is-active a:hover, .hero.is-info .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a:hover, nav.nav .hero.is-info .tabs.is-toggle #menu-toggle:checked + li#menu a:hover {
+    .hero.is-info .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover, .hero.is-info .tabs.is-toggle li.is-active a, .hero.is-info .tabs.is-toggle li.is-active a:hover {
       background-color: #fff;
       border-color: #fff;
       color: #3273dc; }
@@ -3841,7 +3822,7 @@ label.panel-block {
         background-color: #fff; }
       .hero.is-info .nav-toggle:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-      .hero.is-info .nav-toggle.is-active span, .hero.is-info nav.nav #menu-toggle:checked + .nav-toggle#menu span, nav.nav .hero.is-info #menu-toggle:checked + .nav-toggle#menu span {
+      .hero.is-info .nav-toggle.is-active span {
         background-color: #fff; }
       .hero.is-info .nav-menu .nav-item {
         border-top-color: rgba(255, 255, 255, 0.2); } }
@@ -3866,24 +3847,22 @@ label.panel-block {
     .hero.is-success a.nav-item,
     .hero.is-success .nav-item a:not(.button) {
       color: rgba(255, 255, 255, 0.7); }
-      .hero.is-success a.nav-item:hover, .hero.is-success a.nav-item.is-active, .hero.is-success nav.nav #menu-toggle:checked + a.nav-item#menu, nav.nav .hero.is-success #menu-toggle:checked + a.nav-item#menu,
+      .hero.is-success a.nav-item:hover, .hero.is-success a.nav-item.is-active,
       .hero.is-success .nav-item a:not(.button):hover,
-      .hero.is-success .nav-item a:not(.button).is-active,
-      .hero.is-success .nav-item nav.nav #menu-toggle:checked + a#menu:not(.button), nav.nav
-      .hero.is-success .nav-item #menu-toggle:checked + a#menu:not(.button) {
+      .hero.is-success .nav-item a:not(.button).is-active {
         color: #fff; }
     .hero.is-success .tabs a {
       color: #fff;
       opacity: 0.9; }
       .hero.is-success .tabs a:hover {
         opacity: 1; }
-    .hero.is-success .tabs li.is-active a, .hero.is-success .tabs nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-success .tabs #menu-toggle:checked + li#menu a {
+    .hero.is-success .tabs li.is-active a {
       opacity: 1; }
     .hero.is-success .tabs.is-boxed a, .hero.is-success .tabs.is-toggle a {
       color: #fff; }
       .hero.is-success .tabs.is-boxed a:hover, .hero.is-success .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-success .tabs.is-boxed li.is-active a, .hero.is-success .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-success .tabs.is-boxed #menu-toggle:checked + li#menu a, .hero.is-success .tabs.is-boxed li.is-active a:hover, .hero.is-success .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a:hover, nav.nav .hero.is-success .tabs.is-boxed #menu-toggle:checked + li#menu a:hover, .hero.is-success .tabs.is-toggle li.is-active a, .hero.is-success .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-success .tabs.is-toggle #menu-toggle:checked + li#menu a, .hero.is-success .tabs.is-toggle li.is-active a:hover, .hero.is-success .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a:hover, nav.nav .hero.is-success .tabs.is-toggle #menu-toggle:checked + li#menu a:hover {
+    .hero.is-success .tabs.is-boxed li.is-active a, .hero.is-success .tabs.is-boxed li.is-active a:hover, .hero.is-success .tabs.is-toggle li.is-active a, .hero.is-success .tabs.is-toggle li.is-active a:hover {
       background-color: #fff;
       border-color: #fff;
       color: #23d160; }
@@ -3894,7 +3873,7 @@ label.panel-block {
         background-color: #fff; }
       .hero.is-success .nav-toggle:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-      .hero.is-success .nav-toggle.is-active span, .hero.is-success nav.nav #menu-toggle:checked + .nav-toggle#menu span, nav.nav .hero.is-success #menu-toggle:checked + .nav-toggle#menu span {
+      .hero.is-success .nav-toggle.is-active span {
         background-color: #fff; }
       .hero.is-success .nav-menu .nav-item {
         border-top-color: rgba(255, 255, 255, 0.2); } }
@@ -3919,24 +3898,22 @@ label.panel-block {
     .hero.is-warning a.nav-item,
     .hero.is-warning .nav-item a:not(.button) {
       color: rgba(0, 0, 0, 0.7); }
-      .hero.is-warning a.nav-item:hover, .hero.is-warning a.nav-item.is-active, .hero.is-warning nav.nav #menu-toggle:checked + a.nav-item#menu, nav.nav .hero.is-warning #menu-toggle:checked + a.nav-item#menu,
+      .hero.is-warning a.nav-item:hover, .hero.is-warning a.nav-item.is-active,
       .hero.is-warning .nav-item a:not(.button):hover,
-      .hero.is-warning .nav-item a:not(.button).is-active,
-      .hero.is-warning .nav-item nav.nav #menu-toggle:checked + a#menu:not(.button), nav.nav
-      .hero.is-warning .nav-item #menu-toggle:checked + a#menu:not(.button) {
+      .hero.is-warning .nav-item a:not(.button).is-active {
         color: rgba(0, 0, 0, 0.7); }
     .hero.is-warning .tabs a {
       color: rgba(0, 0, 0, 0.7);
       opacity: 0.9; }
       .hero.is-warning .tabs a:hover {
         opacity: 1; }
-    .hero.is-warning .tabs li.is-active a, .hero.is-warning .tabs nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-warning .tabs #menu-toggle:checked + li#menu a {
+    .hero.is-warning .tabs li.is-active a {
       opacity: 1; }
     .hero.is-warning .tabs.is-boxed a, .hero.is-warning .tabs.is-toggle a {
       color: rgba(0, 0, 0, 0.7); }
       .hero.is-warning .tabs.is-boxed a:hover, .hero.is-warning .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-warning .tabs.is-boxed li.is-active a, .hero.is-warning .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-warning .tabs.is-boxed #menu-toggle:checked + li#menu a, .hero.is-warning .tabs.is-boxed li.is-active a:hover, .hero.is-warning .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a:hover, nav.nav .hero.is-warning .tabs.is-boxed #menu-toggle:checked + li#menu a:hover, .hero.is-warning .tabs.is-toggle li.is-active a, .hero.is-warning .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-warning .tabs.is-toggle #menu-toggle:checked + li#menu a, .hero.is-warning .tabs.is-toggle li.is-active a:hover, .hero.is-warning .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a:hover, nav.nav .hero.is-warning .tabs.is-toggle #menu-toggle:checked + li#menu a:hover {
+    .hero.is-warning .tabs.is-boxed li.is-active a, .hero.is-warning .tabs.is-boxed li.is-active a:hover, .hero.is-warning .tabs.is-toggle li.is-active a, .hero.is-warning .tabs.is-toggle li.is-active a:hover {
       background-color: rgba(0, 0, 0, 0.7);
       border-color: rgba(0, 0, 0, 0.7);
       color: #ffdd57; }
@@ -3947,7 +3924,7 @@ label.panel-block {
         background-color: rgba(0, 0, 0, 0.7); }
       .hero.is-warning .nav-toggle:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-      .hero.is-warning .nav-toggle.is-active span, .hero.is-warning nav.nav #menu-toggle:checked + .nav-toggle#menu span, nav.nav .hero.is-warning #menu-toggle:checked + .nav-toggle#menu span {
+      .hero.is-warning .nav-toggle.is-active span {
         background-color: rgba(0, 0, 0, 0.7); }
       .hero.is-warning .nav-menu .nav-item {
         border-top-color: rgba(0, 0, 0, 0.2); } }
@@ -3972,24 +3949,22 @@ label.panel-block {
     .hero.is-danger a.nav-item,
     .hero.is-danger .nav-item a:not(.button) {
       color: rgba(255, 255, 255, 0.7); }
-      .hero.is-danger a.nav-item:hover, .hero.is-danger a.nav-item.is-active, .hero.is-danger nav.nav #menu-toggle:checked + a.nav-item#menu, nav.nav .hero.is-danger #menu-toggle:checked + a.nav-item#menu,
+      .hero.is-danger a.nav-item:hover, .hero.is-danger a.nav-item.is-active,
       .hero.is-danger .nav-item a:not(.button):hover,
-      .hero.is-danger .nav-item a:not(.button).is-active,
-      .hero.is-danger .nav-item nav.nav #menu-toggle:checked + a#menu:not(.button), nav.nav
-      .hero.is-danger .nav-item #menu-toggle:checked + a#menu:not(.button) {
+      .hero.is-danger .nav-item a:not(.button).is-active {
         color: #fff; }
     .hero.is-danger .tabs a {
       color: #fff;
       opacity: 0.9; }
       .hero.is-danger .tabs a:hover {
         opacity: 1; }
-    .hero.is-danger .tabs li.is-active a, .hero.is-danger .tabs nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-danger .tabs #menu-toggle:checked + li#menu a {
+    .hero.is-danger .tabs li.is-active a {
       opacity: 1; }
     .hero.is-danger .tabs.is-boxed a, .hero.is-danger .tabs.is-toggle a {
       color: #fff; }
       .hero.is-danger .tabs.is-boxed a:hover, .hero.is-danger .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-danger .tabs.is-boxed li.is-active a, .hero.is-danger .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-danger .tabs.is-boxed #menu-toggle:checked + li#menu a, .hero.is-danger .tabs.is-boxed li.is-active a:hover, .hero.is-danger .tabs.is-boxed nav.nav #menu-toggle:checked + li#menu a:hover, nav.nav .hero.is-danger .tabs.is-boxed #menu-toggle:checked + li#menu a:hover, .hero.is-danger .tabs.is-toggle li.is-active a, .hero.is-danger .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a, nav.nav .hero.is-danger .tabs.is-toggle #menu-toggle:checked + li#menu a, .hero.is-danger .tabs.is-toggle li.is-active a:hover, .hero.is-danger .tabs.is-toggle nav.nav #menu-toggle:checked + li#menu a:hover, nav.nav .hero.is-danger .tabs.is-toggle #menu-toggle:checked + li#menu a:hover {
+    .hero.is-danger .tabs.is-boxed li.is-active a, .hero.is-danger .tabs.is-boxed li.is-active a:hover, .hero.is-danger .tabs.is-toggle li.is-active a, .hero.is-danger .tabs.is-toggle li.is-active a:hover {
       background-color: #fff;
       border-color: #fff;
       color: #ff3860; }
@@ -4000,7 +3975,7 @@ label.panel-block {
         background-color: #fff; }
       .hero.is-danger .nav-toggle:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-      .hero.is-danger .nav-toggle.is-active span, .hero.is-danger nav.nav #menu-toggle:checked + .nav-toggle#menu span, nav.nav .hero.is-danger #menu-toggle:checked + .nav-toggle#menu span {
+      .hero.is-danger .nav-toggle.is-active span {
         background-color: #fff; }
       .hero.is-danger .nav-menu .nav-item {
         border-top-color: rgba(255, 255, 255, 0.2); } }
@@ -4063,12 +4038,26 @@ label.panel-block {
 .menu .menu-label {
   margin-bottom: 0; }
 
+.menu.nav-item {
+  display: block; }
+
 nav.nav label {
   cursor: pointer; }
 
 nav.nav #menu-toggle {
-  display: none;
-  /* hide the checkbox */ }
+  display: none; }
+
+nav.nav #menu {
+  max-height: 0;
+  display: block;
+  overflow: hidden;
+  -webkit-transition: max-height 200ms linear;
+  -moz-transition: max-height 200ms linear;
+  -ms-transition: max-height 200ms linear;
+  transition: max-height 200ms linear; }
+
+nav.nav #menu-toggle:checked + #menu {
+  max-height: 1000%; }
 
 .page-content .work .image {
   margin-bottom: 0.5rem; }
