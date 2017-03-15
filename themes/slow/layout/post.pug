@@ -1,0 +1,27 @@
+extend layout.pug
+
+mixin work(work)
+  .columns.work
+    .column
+      if !work.layout || work.layout === 'default'
+        each imageUrl in work.images
+          +image(imageUrl)
+      if work.layout === 'columns'
+        .columns
+          each imageUrl in work.images
+            .column
+              +image(imageUrl)
+    .cartel-container.column.is-one-quarter
+      .cartel!= work.cartel
+
+block content
+  - console.log('post, page.layout :', page.layout)
+  .page-content
+    if page.works && page.works.top
+      each work in page.works.top
+        +work(work)
+    .columns
+      .column.is-three-quarters!= page.content
+    if page.works && page.works.bottom
+      each work in page.works.bottom
+        +work(work)
