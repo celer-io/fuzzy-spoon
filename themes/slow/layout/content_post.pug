@@ -1,0 +1,10 @@
+- console.log('>>> content_post.pug')
+.page-content
+  if page.works && page.works.top
+    each work in page.works.top
+      +work(work)
+  .columns
+    .column.is-three-quarters!= page.content
+  if page.works && page.works.bottom
+    each work in page.works.bottom
+      +work(work)

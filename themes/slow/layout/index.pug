@@ -1,23 +1,18 @@
-extend layout.pug
-
-mixin image(imageUrl)
-  - console.log('imageUrl :', imageUrl)
-  figure.image
-    img(src=imageUrl)
-
-block content
-  - console.log('index, page.layout :', page.layout)
-  //- - console.log('site.pages :', site.pages)
-  - 
-    var homePage;
-    site.pages.forEach((page) => {
-      if (page.title === 'home') homePage = page
-    })
-  //- - console.log('homePage.data.title :', homePage.data.title)
-  //- - console.log('homePage :', homePage)
-  - console.log('homePage.head_img :', homePage.head_img)
-  - console.log('homePage.content :', homePage.content)
-  if homePage.head_img
-    - console.log('homePage.head_img.medium :', homePage.head_img.medium)
-    +image(homePage.head_img.medium)
-  div!= homePage.content
+doctype html
+include mixins.pug
+html
+  include partials/head.pug
+  body
+    include partials/menu_mobile.pug
+    section.section
+      .container
+        .columns
+          include partials/menu_desktop.pug
+          .column
+            if !page.layout
+              include content_index.pug
+            else if page.layout === 'page'
+              include content_page.pug
+            else if page.layout === 'post'
+              include content_post.pug
+    include partials/foot.pug

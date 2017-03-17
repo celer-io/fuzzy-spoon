@@ -1,4 +1,8 @@
-extend layout.pug
+mixin image(imageUrl)
+  - console.log('imageUrl :', imageUrl)
+  figure.image
+    img(src=imageUrl)
+
 
 mixin work(work)
   .columns.work
@@ -13,15 +17,3 @@ mixin work(work)
               +image(imageUrl)
     .cartel-container.column.is-one-quarter
       .cartel!= work.cartel
-
-block content
-  - console.log('post, page.layout :', page.layout)
-  .page-content
-    if page.works && page.works.top
-      each work in page.works.top
-        +work(work)
-    .columns
-      .column.is-three-quarters!= page.content
-    if page.works && page.works.bottom
-      each work in page.works.bottom
-        +work(work)

@@ -1,0 +1,7 @@
+- console.log('>>> content_index.pug')
+- var homePage;
+- site.pages.forEach((page) => {if (page.title === 'home') homePage = page})
+.columns
+  .column.is-three-quarters
+      +image(config.root + 'home/' + homePage.head_img.medium)
+div!= homePage.content

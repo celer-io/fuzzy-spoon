@@ -32,7 +32,7 @@ Sources of charlottethomas.fr website (currently in development)
 - [x]	Handle inclusion of **works** (*as 'oeuvres'*) in page
 	- [x]	Work's multiple images
 	- [x]	Work's predefined layouts
-- [ ] Add home
+- [x] Add home
 - [ ] Global style reset
 	- [ ] change base colors
 	- [ ] remove button hilights
