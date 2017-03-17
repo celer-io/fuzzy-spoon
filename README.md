@@ -33,10 +33,9 @@ Sources of charlottethomas.fr website (currently in development)
 	- [x]	Work's multiple images
 	- [x]	Work's predefined layouts
 - [x] Add home
-- [ ] Global style reset
-	- [ ] change base colors
-	- [ ] remove button hilights
-- [ ] Add Js ramda utils (for templating and client code)
+- [x] Global style reset
+	- [x] change primary colors
+	- [x] remove button hilights
 - [ ]	Implement ZoomBox feature
 - [ ]	Add show nav on scroll up
 - [ ] Contact form with mailgun/sendgrid/mailchimp integration
@@ -45,6 +44,7 @@ Sources of charlottethomas.fr website (currently in development)
 	- [ ] Order and rename images
 	- [ ] Resize images that need it
 	- [ ] Include content
+- [ ] Add Js ramda utils (for templating and client code)
 
 ### Later
 - [ ] Improve build-deploy-integ workflow (with tagging and shit)

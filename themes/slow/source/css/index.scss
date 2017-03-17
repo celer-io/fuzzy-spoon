@@ -1,6 +1,4 @@
-// $blue: #0000EE;
-// $link: $blue;
-
+@import "colors";
 @import "../../node_modules/bulma/bulma";
 
 .logo {
@@ -32,9 +30,13 @@
 	margin-right: -3.5rem;
 }
 
+
 .menu .menu {
 	&-list a {
 		padding: 0;
+		&:hover {
+			background-color: transparent;
+		}
 	}
 	&-label {
 		margin-bottom: 0;
@@ -43,6 +45,7 @@
 .menu.nav-item {
 	display: block;
 }
+
 
 nav.nav {
 	label {
@@ -55,62 +58,60 @@ nav.nav {
 		max-height: 0;
 		display: block;
 		overflow: hidden;
-		-webkit-transition: max-height 200ms linear;
-		-moz-transition: max-height 200ms linear;
-		-ms-transition: max-height 200ms linear;
-		transition: max-height 200ms linear;
+		-webkit-transition: max-height 260ms linear;
+		-moz-transition: max-height 260ms linear;
+		-ms-transition: max-height 260ms linear;
+		transition: max-height 260ms linear;
 	}
 	#menu-toggle:checked + #menu {
-		max-height: 1000%;
+		max-height: 93vh;
 	}
 }
 
 
-.page-content {
-	.work {
-		.image {
-			margin-bottom: 0.5rem;
+.work {
+	.image {
+		margin-bottom: 0.5rem;
+	}
+	.cartel {
+		margin-top: 0;
+		font-size: 0.80em;
+		line-height: 1.4em;
+	}
+	@media (max-width: $tablet){
+		.cartel-container {
+			margin-top: -1.5rem;
 		}
-		.cartel {
-			margin-top: 0;
-			font-size: 0.80em;
-			line-height: 1.4em;
-		}
-		@media (max-width: $tablet){
-			.cartel-container {
-				margin-top: -1.5rem;
+		.columns {
+			.column:not(:last-child){
+				padding-bottom: 0;
 			}
-			.columns {
-				.column:not(:last-child){
-					padding-bottom: 0;
-				}
-				.column:not(:first-child) {
-					padding-top: 0;
-				}
+			.column:not(:first-child) {
+				padding-top: 0;
 			}
 		}
-		@media (min-width: $tablet){
-			.cartel-container {
-				margin-left: -1rem;
-				position: relative;
-				.cartel {
-					position: absolute;
-					bottom: 1rem;
-				}
+	}
+	@media (min-width: $tablet){
+		.cartel-container {
+			margin-left: -1rem;
+			position: relative;
+			.cartel {
+				position: absolute;
+				bottom: 1rem;
 			}
-			.columns {
-				.column{
-					padding-right: 0.25rem;
-					padding-left: 0.25rem;
-				}
-				.column:last-child {
-					padding-right: 0.75rem;
-				}
-				.column:first-child {
-					padding-left: 0.75rem;
-				}
+		}
+		.columns {
+			.column{
+				padding-right: 0.25rem;
+				padding-left: 0.25rem;
 			}
+			.column:last-child {
+				padding-right: 0.75rem;
+			}
+			.column:first-child {
+				padding-left: 0.75rem;
+			}
+		}
 
-		}
 	}
 }
