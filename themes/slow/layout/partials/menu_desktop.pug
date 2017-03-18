@@ -1,8 +1,9 @@
 div.menu.column.is-one-quarter.is-hidden-mobile.is-2-widescreen
   div.columns
     div.column.is-half
-      figure.image
-        img(src=config.root + theme.logo_desktop)
+      a(href="/")
+        figure.image
+          img(src=config.root + theme.logo_desktop)
   each cat in site.categories.toArray()
     p.menu-label= cat.name
     ul.menu-list
@@ -12,5 +13,6 @@ div.menu.column.is-one-quarter.is-hidden-mobile.is-2-widescreen
   br
   ul.menu-list
     each page in site.pages.toArray()
-      li
-        a(href= config.root + page.canonical_path) #{ page.title }
+      unless page.title === 'home'
+        li
+          a(href= config.root + page.canonical_path) #{ page.title }
