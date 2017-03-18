@@ -1,7 +1,13 @@
-mixin image(imageUrl)
-  - console.log('imageUrl :', imageUrl)
+- function hashCode(s){return s.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);}
+
+mixin image(imageUrl, zoomable, fullImageUrl)
   figure.image
-    img(src=imageUrl)
+    img(
+      src=imageUrl
+      class=zoomable ? 'is-zoomable' : ''
+      data-fullwidth-src=fullImageUrl
+      id=zoomable ? 'zoomable-' + hashCode(imageUrl) : ''
+    )
 
 
 mixin work(work)

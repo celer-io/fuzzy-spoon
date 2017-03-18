@@ -15,4 +15,7 @@ html
               include content_page.pug
             else if page.layout === 'post'
               include content_post.pug
+    //- script(src=config.root + 'js/image_zoom.min.js')
+    script(src=config.root + 'js/image_zoom.js')
+    script(src=config.root + 'js/app.js')
     include partials/foot.pug

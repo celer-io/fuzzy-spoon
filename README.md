@@ -36,14 +36,16 @@ Sources of charlottethomas.fr website (currently in development)
 - [x] Global style reset
 	- [x] change primary colors
 	- [x] remove button hilights
-- [ ]	Implement ZoomBox feature
-- [ ]	Add show nav on scroll up
-- [ ] Contact form with mailgun/sendgrid/mailchimp integration
 - [ ] Copy articles from old site
 	- [x]	Get images
 	- [ ] Order and rename images
 	- [ ] Resize images that need it
 	- [ ] Include content
+- [ ] Contact form with mailgun/sendgrid/mailchimp integration
+- [ ]	Implement ZoomBox feature
+	- [x] Desktop
+	- [ ] Mobile (with img-touch-canvas)
+- [ ]	Add show nav on scroll up
 - [ ] Add Js ramda utils (for templating and client code)
 
 ### Later
