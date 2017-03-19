@@ -11,15 +11,24 @@ mixin image(imageUrl, zoomable, fullImageUrl)
 
 
 mixin work(work)
+  - console.log('work :', work)
   .columns.work
     .column
       if !work.layout || work.layout === 'default'
-        each imageUrl in work.images
-          +image(imageUrl)
+        each imageName in work.images
+          +image(
+            imageName + '.jpg',
+            work.zoomable,
+            imageName + '_full.jpg'
+          )
       if work.layout === 'columns'
         .columns
-          each imageUrl in work.images
+          each imageName in work.images
             .column
-              +image(imageUrl)
+              +image(
+                imageName + '.jpg',
+                work.zoomable,
+                imageName + '_full.jpg'
+              )
     .cartel-container.column.is-one-quarter
       .cartel!= work.cartel

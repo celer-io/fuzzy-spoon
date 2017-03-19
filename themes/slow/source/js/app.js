@@ -17,14 +17,20 @@ window.onload=function(){
     zoomables.push({
       id: elements[i].id,
       // element: elements[i],
-      imgZoom: new ImageZoom('#'+elements[i].id),
+      // imgZoom: new ImageZoom('#'+elements[i].id),
       active: false
     })
   }
 
-  setTimeout(function() {
-    zoomables.forEach(function(zoomable) {
-      zoomable.imgZoom.disable()
-    })
-  }, 500)
+  zoomables.forEach(function(zoomable) {
+    zoomable.imgZoom = new ImageZoom('#'+zoomable.id)
+    setTimeout(function () {zoomable.imgZoom.disable()}, 500);
+    // zoomable.imgZoom.disable()
+  })
+
+  // setTimeout(function() {
+  //   zoomables.forEach(function(zoomable) {
+  //     zoomable.imgZoom.disable()
+  //   })
+  // }, 500)
 }
