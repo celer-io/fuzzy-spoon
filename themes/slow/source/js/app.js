@@ -5,22 +5,18 @@ window.onload=function(){
   var zoomables = []
 
   function toggleZoomable(ev) {
-    var truc = zoomables.find(function (zoomable) {
-      return zoomable.id === ev.toElement.id
+    var toggeled = zoomables.find(function (zoomable) {
+      return zoomable.id === ev.target.id
     })
-
-    if (truc.active) truc.imgZoom.disable()
-    else truc.imgZoom.enable()
-    truc.active = !truc.active
-
-    truc.imgZoom.active(truc.active)
+    toggeled.active ? toggeled.imgZoom.disable() : toggeled.imgZoom.enable()
+    toggeled.active = !toggeled.active
   }
 
   for (var i = 0; i < nZoomables; i++) {
     elements[i].onclick = toggleZoomable
     zoomables.push({
       id: elements[i].id,
-      element: elements[i],
+      // element: elements[i],
       imgZoom: new ImageZoom('#'+elements[i].id),
       active: false
     })

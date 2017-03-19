@@ -175,7 +175,7 @@ var ImageZoom;
 
 		function checkZoomable(){
 			var zoomable = self.recalculatePositions();
-			console.log(self, zoomable);
+			// console.log(self, zoomable);
 			if(zoomable){
 				self.enable();
 			}
@@ -264,6 +264,7 @@ var ImageZoom;
 			attach(original,"mousemove", recalcOffsets);
 			attach(original,"mouseenter", setActive);
 			attach(original,"mouseleave", setInactive);
+			setActive();
 			return self;
 		}
 
@@ -281,6 +282,7 @@ var ImageZoom;
 			detach(original,"mousemove", recalcOffsets);
 			detach(original,"mouseenter", setActive);
 			detach(original,"mouseleave", setInactive);
+			setInactive();
 			return self;
 		}
 
