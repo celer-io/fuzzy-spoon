@@ -9,9 +9,6 @@ for image_file in $filelist; do
   postname="${dirname##*/}"
 
   echo converting $filename in $dirname
-  convert $image_file -resize ${width} $dirname/${postname}_${hashname}_widescreen.${extension}
-
-  # echo $image_file
-  # preextensionfilename=`convert $image_file -format “%t” info:`
-  # echo $preextensionfilename
+  convert $image_file -resize ${width} $dirname/${postname}_${hashname}.${extension}
+  mv $image_file $dirname/${postname}_${hashname}_full.${extension}
 done
