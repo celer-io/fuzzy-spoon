@@ -32,15 +32,17 @@ Sources of charlottethomas.fr website (currently in development)
 - [x]	Handle inclusion of **works** (*as 'oeuvres'*) in page
 	- [x]	Work's multiple images
 	- [x]	Work's predefined layouts
+	- [ ] Add 'column-single' layout
 - [x] Add home
 - [x] Global style reset
 	- [x] change primary colors
 	- [x] remove button hilights
 - [ ] Copy articles from old site
 	- [x]	Get images
-	- [ ] Order and rename images
-	- [ ] Resize images that need it
-	- [ ] Include content
+	- [x] Order and rename images
+	- [x] Resize images that need it
+	- [x] Include content
+	- [ ] Crop and rotate some imgs
 - [ ] Contact form with mailgun/sendgrid/mailchimp integration
 - [ ]	Implement ZoomBox feature
 	- [x] Desktop

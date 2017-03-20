@@ -1,2 +1,7 @@
-- console.log('>>> content_page.pug')
+if page.head_img
+  +image(
+    page.head_img.name + '.jpg',
+    page.head_img.zoomable,
+    page.head_img.name + '_full.jpg'
+  )
 div!= page.content
