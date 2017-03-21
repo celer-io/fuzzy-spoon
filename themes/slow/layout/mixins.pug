@@ -29,5 +29,6 @@ mixin work(work)
                 work.zoomable,
                 imageName + '_full.jpg'
               )
-    .cartel-container.column.is-one-quarter
+    - var isSingleColumn = work.layout === 'columns' && work.images.length === 1
+    .cartel-container.column(class= isSingleColumn ? "is-7" : "is-2")
       .cartel!= work.cartel

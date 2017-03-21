@@ -32,7 +32,7 @@ Sources of charlottethomas.fr website (currently in development)
 - [x]	Handle inclusion of **works** (*as 'oeuvres'*) in page
 	- [x]	Work's multiple images
 	- [x]	Work's predefined layouts
-	- [ ] Add 'column-single' layout
+	- [x] Add 'column-single' layout
 - [x] Add home
 - [x] Global style reset
 	- [x] change primary colors
@@ -62,4 +62,4 @@ Sources of charlottethomas.fr website (currently in development)
 ### Far down the road
 - [ ] Develop deployment express api
 - [ ] Develop cms backoffice, integrated with api
-- [ ] Implement resize and upload images (with forced predefined ration for some cases)
+- [ ] Implement resize and upload images (with forced predefined ratio for some cases)
