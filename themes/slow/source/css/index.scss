@@ -41,19 +41,24 @@
 }
 
 
-.menu .menu {
-	&-list a {
-		padding: 0;
-		&:hover {
-			background-color: transparent;
+.menu {
+	&.nav-item {
+		display: block;
+	}
+	.menu {
+		&-list a {
+			padding: 0;
+			&:hover {
+				background-color: transparent;
+			}
+		}
+		&-label {
+			margin-bottom: 0;
 		}
 	}
-	&-label {
-		margin-bottom: 0;
+	.logo-wrapper {
+		margin-bottom: 30px;
 	}
-}
-.menu.nav-item {
-	display: block;
 }
 
 
