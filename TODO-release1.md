@@ -5,9 +5,9 @@
 [x] Add actu
 [x] Rename strates post
 [x] Activate zoom everywhere
-[] Crop liberation head
-[] Rotate echantillons imgs
-[] Crop a propos img
+[x] Crop liberation head
+[x] Rotate echantillons imgs
+[x] Crop a propos img
 
 ### Nice to have
 [] Crop hautes herbes 1st img
