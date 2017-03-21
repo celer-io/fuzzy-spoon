@@ -3,7 +3,7 @@
     each work in page.top_works
       +work(work)
   .columns
-    .column.is-three-quarters!= page.content
+    .column.is-10(class=page.centered ? "has-text-centered" : "")!= page.content
   if page.bottom_works
     each work in page.bottom_works
       +work(work)

@@ -1,10 +1,10 @@
 ### Prio
-[X] Space up menu under logo
-[] Update a propos
-[] Update bio
-[] Add actu
-[] Rename strates post
-[] Activate zoom everywhere
+[x] Space up menu under logo
+[x] Update a propos
+[x] Update bio
+[x] Add actu
+[x] Rename strates post
+[x] Activate zoom everywhere
 [] Crop liberation head
 [] Rotate echantillons imgs
 [] Crop a propos img

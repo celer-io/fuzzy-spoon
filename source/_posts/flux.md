@@ -6,12 +6,15 @@ category: lin
 centered: true
 top_works:
   - cartel: Lin blanchi<br>10x20X60 cm
+    zoomable: true
     images:
       - flux_3223948260
   - cartel: Lin blanchi<br>8x8x100 cm
+    zoomable: true
     images:
       - flux_2652670429
   - cartel: Lin blanchi<br>10x10x160 cm
+    zoomable: true
     images:
       - flux_3349071665
 ---
