@@ -4038,13 +4038,14 @@ label.panel-block {
   opacity: 1 !important;
   transition: opacity 0.5s; }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
   .container {
-    max-width: 860px; } }
+    margin: 0 auto;
+    max-width: 830px; } }
 
 @media screen and (min-width: 1192px) {
   .container {
-    max-width: 1000px; } }
+    max-width: 900px; } }
 
 .logo {
   max-height: 70vh;
@@ -4069,6 +4070,9 @@ label.panel-block {
   letter-spacing: 3px;
   margin-right: -3.5rem; }
 
+.menu.nav-item {
+  display: block; }
+
 .menu .menu-list a {
   padding: 0; }
   .menu .menu-list a:hover {
@@ -4077,8 +4081,8 @@ label.panel-block {
 .menu .menu-label {
   margin-bottom: 0; }
 
-.menu.nav-item {
-  display: block; }
+.menu .logo-wrapper {
+  margin-bottom: 30px; }
 
 nav.nav label {
   cursor: pointer; }
