@@ -37,18 +37,25 @@ Sources of charlottethomas.fr website (currently in development)
 - [x] Global style reset
 	- [x] change primary colors
 	- [x] remove button hilights
-- [ ] Copy articles from old site
+- [x] Copy articles from old site
 	- [x]	Get images
 	- [x] Order and rename images
 	- [x] Resize images that need it
 	- [x] Include content
-	- [ ] Crop and rotate some imgs
+	- [x] Crop and rotate some imgs
 - [ ] Contact form with mailgun/sendgrid/mailchimp integration
 - [ ]	Implement ZoomBox feature
 	- [x] Desktop
+	- [ ] Fix loading timeout and disabled by default
 	- [ ] Mobile (with img-touch-canvas)
 - [ ]	Add show nav on scroll up
 - [ ] Add Js ramda utils (for templating and client code)
+- [ ] SEO
+	- [ ] Sitemap
+	- [ ] Metas
+	- [ ] ...
+- [ ] Add cc-by-nc-sa license and logo
+- [ ] I18n
 
 ### Later
 - [ ] Improve build-deploy-integ workflow (with tagging and shit)

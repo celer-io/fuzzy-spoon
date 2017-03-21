@@ -1,3 +1,11 @@
+mixin cat-mobile(cat)
+  div.menu.nav-item
+    p.menu-label= cat.name
+      ul.menu-list
+        each post in cat.posts.toArray().sort(function(a,b){return a.date.isAfter(b.date)})
+          li
+            a(href= config.root + post.canonical_path) #{ post.title }
+
 div.container.is-hidden-tablet
   nav.nav
     div.nav-center
@@ -10,13 +18,13 @@ div.container.is-hidden-tablet
       span
     input#menu-toggle(type='checkbox')
     div#menu.nav-right.nav-menu
-      each cat in site.categories.toArray()
-        div.menu.nav-item
-          p.menu-label= cat.name
-            ul.menu-list
-              each post in cat.posts.toArray().sort(function(a,b){return a.date.isAfter(b.date)})
-                li
-                  a(href= config.root + post.canonical_path) #{ post.title }
+      //- TODO: Define categories order in site config
+      - var linCat = site.categories.toArray().find(function(cat){return cat.slug === 'lin'})
+      - var hautesHerbesCat = site.categories.toArray().find(function(cat){return cat.slug === 'hautes-herbes'})
+      - var stratesCat = site.categories.toArray().find(function(cat){return cat.slug === 'strates'})
+      +cat-mobile(linCat)
+      +cat-mobile(hautesHerbesCat)
+      +cat-mobile(stratesCat)
       each page in site.pages.toArray()
         unless page.title === 'home'
           div.menu.nav-item

@@ -5,24 +5,24 @@ category: lin
 
 top_works:
   - cartel: Batiste de lin, fil de lin blanchi, tambours en bois.<br>38x48 cm
-    zoomable: true
+    zoomable: false
     images:
       - rencontre_vegetale_2457492402
 bottom_works:
   - cartel: Batiste de lin, fils de lin bruts, tambours en bois.<br>ø 26 cm
-    zoomable: true
+    zoomable: false
     images:
       - rencontre_vegetale_3724459695
   - cartel: 'Tulle 100% soie, fils de lin bruts, tambours en bois.<br>ø 17 cm<br>H: 160 cm'
-    zoomable: true
+    zoomable: false
     images:
       - rencontre_vegetale_784607750
   - cartel: 'Dentelle au fuseau. fils de lin blanchis et bruts, tambours en bois.<br>ø 11.5 cm<br>H: 160 cm'
-    zoomable: true
+    zoomable: false
     images:
       - rencontre_vegetale_216386648
   - cartel: 'Tulle 100% coton, fils de lin blanchis, tambours en bois.<br>ø 24 cm<br>H: 160 cm'
-    zoomable: true
+    zoomable: false
     images:
       - rencontre_vegetale_2281525934
 ---
