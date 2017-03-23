@@ -46,7 +46,7 @@ Sources of charlottethomas.fr website (currently in development)
 - [ ] Contact form with mailgun/sendgrid/mailchimp integration
 - [ ]	Implement ZoomBox feature
 	- [x] Desktop
-	- [ ] Fix loading timeout and disabled by default
+	- [x] Fix loading timeout and disabled by default
 	- [ ] Mobile (with img-touch-canvas)
 - [ ]	Add show nav on scroll up
 - [ ] Add Js ramda utils (for templating and client code)
