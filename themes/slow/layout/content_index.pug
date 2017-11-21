@@ -1,11 +1,10 @@
-- console.log('>>> content_index.pug')
 - var homePage;
 - site.pages.forEach((page) => {if (page.title === 'home') homePage = page})
+
+div.content!= homePage.content
+br
 +image(
   config.root + 'home/' + homePage.head_img.name + '.jpg',
   homePage.head_img.zoomable,
   config.root + 'home/' + homePage.head_img.name + '_full.jpg'
 )
-br
-
-div.content!= homePage.content
