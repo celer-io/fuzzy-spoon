@@ -9,11 +9,11 @@ top_works:
     images:
       - et-terre_1
   - cartel: "\"Impermanence\"<br/>Fil de lin blanchi"
-    zoomable: false
+    zoomable: true
     images:
       - et-terre_2
   - cartel: "\"Impermanence\"<br/>Fil de lin blanchi"
-    zoomable: false
+    zoomable: true
     images:
       - et-terre_3
 ---

@@ -4,7 +4,7 @@ date: 2017-03-14 09:40:56
 
 head_img:
   name: et-terre_2
-  zoomable: false
+  zoomable: true
 ---
 
 ### TAPISSERIE D'ART & STRUCTURE TEXTILE
