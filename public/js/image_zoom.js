@@ -57,6 +57,7 @@ var ImageZoom;
 		var scrollOn;
 		var position = null;
 		var baseDims;
+		var active = false;
 		Object.defineProperties(this, {
 			proportion: {
 				get: function(){return proportion;}
@@ -70,7 +71,9 @@ var ImageZoom;
 			target: null,
 			imageUrl: null,
 			backgroundImageColor: null,
-			forceNaturalProportions: true
+			forceNaturalProportions: true,
+			defaultDisabled: false,
+			toggleOnClick: false
 		}, options);
 		if(self.opts.target && typeof self.opts.target == "object"){
 			if(jQuery && (self.opts.target instanceof jQuery)){
@@ -170,15 +173,21 @@ var ImageZoom;
 			self.zoomedImage.style.mozTransition = transitionString;
 			self.zoomedImage.style.transition = transitionString;
 			attach(window,"resize",checkZoomable);
+			if (self.opts.toggleOnClick) attach(original,"click",toggle);
 			checkZoomable();
 		}
 
 		function checkZoomable(){
 			var zoomable = self.recalculatePositions();
-			// console.log(self, zoomable);
-			if(zoomable){
+			if(zoomable && !self.opts.defaultDisabled){
 				self.enable();
 			}
+		}
+
+		function toggle() {
+			active ? self.disable() : self.enable()
+			self.active(!active);
+			active = !active;
 		}
 
 		/**
@@ -264,7 +273,6 @@ var ImageZoom;
 			attach(original,"mousemove", recalcOffsets);
 			attach(original,"mouseenter", setActive);
 			attach(original,"mouseleave", setInactive);
-			setActive();
 			return self;
 		}
 
@@ -282,7 +290,6 @@ var ImageZoom;
 			detach(original,"mousemove", recalcOffsets);
 			detach(original,"mouseenter", setActive);
 			detach(original,"mouseleave", setInactive);
-			setInactive();
 			return self;
 		}
 
