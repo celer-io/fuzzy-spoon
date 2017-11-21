@@ -19,8 +19,11 @@ Sources of charlottethomas.fr website (currently in development)
 *After doing that, an new integration version should be available [here](https://crucialhawg.github.io/fuzzy-spoon/)*
 
 ### Bach resize images
-	cd <path to images folder>
-	mogrify -path <path to resized images folder> -resize <max-width> *.jpg
+	`cd <path to images folder>`
+	`mogrify -path <path to resized images folder> -resize <max-width> *.jpg`
+
+### Compress images
+	`convert -strip -interlace Plane -quality 85% et-terre_1.jpg et-terre_1_min.jpg`
 
 ---
 
