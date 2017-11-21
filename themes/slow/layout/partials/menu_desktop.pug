@@ -14,9 +14,11 @@ div.menu.column.is-one-quarter.is-hidden-mobile
           img(src=config.root + theme.logo_desktop)
   //- TODO: Define categories order in site config
   - var linCat = site.categories.toArray().find(function(cat){return cat.slug === 'lin'})
+  - var linAndCrinCat = site.categories.toArray().find(function(cat){return cat.name === 'lin & crin'})
   - var hautesHerbesCat = site.categories.toArray().find(function(cat){return cat.slug === 'hautes-herbes'})
   - var stratesCat = site.categories.toArray().find(function(cat){return cat.slug === 'strates'})
   +cat-desktop(linCat)
+  +cat-desktop(linAndCrinCat)
   +cat-desktop(hautesHerbesCat)
   +cat-desktop(stratesCat)
   br

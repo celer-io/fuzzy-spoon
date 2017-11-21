@@ -1,7 +1,7 @@
 ---
 title: Échantillons
 date: 2000-01-05 00:00:00
-category: lin
+category: lin & crin
 
 top_works:
   - cartel: Lin blanchi, crin de cheval.<br>8 x 15.5 cm
