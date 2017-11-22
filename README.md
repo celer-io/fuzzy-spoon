@@ -8,7 +8,12 @@ Sources of charlottethomas.fr website (currently in development)
 ## Some commands workflow
 ### Install en develop
 	npm install
+	cd theme/slow
+	npm install
+	cd ../..
+	TODO: Investigate git sumbodules workflow
 	hexo serve --debug
+
 
 ### Build and deploy to integration
 	hexo generate
