@@ -1,4 +1,4 @@
-/*! bulma.io v0.3.1 | MIT License | github.com/jgthms/bulma */
+/*! bulma.io v0.3.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -543,6 +543,8 @@ a.box:active {
         background-color: white;
         border-color: white;
         color: #0a0a0a; }
+      .button.is-white.is-outlined.is-loading:after {
+        border-color: transparent transparent white white !important; }
     .button.is-white.is-inverted.is-outlined {
       background-color: transparent;
       border-color: #0a0a0a;
@@ -582,6 +584,8 @@ a.box:active {
         background-color: #0a0a0a;
         border-color: #0a0a0a;
         color: white; }
+      .button.is-black.is-outlined.is-loading:after {
+        border-color: transparent transparent #0a0a0a #0a0a0a !important; }
     .button.is-black.is-inverted.is-outlined {
       background-color: transparent;
       border-color: white;
@@ -621,6 +625,8 @@ a.box:active {
         background-color: whitesmoke;
         border-color: whitesmoke;
         color: #363636; }
+      .button.is-light.is-outlined.is-loading:after {
+        border-color: transparent transparent whitesmoke whitesmoke !important; }
     .button.is-light.is-inverted.is-outlined {
       background-color: transparent;
       border-color: #363636;
@@ -660,6 +666,8 @@ a.box:active {
         background-color: #363636;
         border-color: #363636;
         color: whitesmoke; }
+      .button.is-dark.is-outlined.is-loading:after {
+        border-color: transparent transparent #363636 #363636 !important; }
     .button.is-dark.is-inverted.is-outlined {
       background-color: transparent;
       border-color: whitesmoke;
@@ -699,6 +707,8 @@ a.box:active {
         background-color: #7a7a7a;
         border-color: #7a7a7a;
         color: #fff; }
+      .button.is-primary.is-outlined.is-loading:after {
+        border-color: transparent transparent #7a7a7a #7a7a7a !important; }
     .button.is-primary.is-inverted.is-outlined {
       background-color: transparent;
       border-color: #fff;
@@ -738,6 +748,8 @@ a.box:active {
         background-color: #3273dc;
         border-color: #3273dc;
         color: #fff; }
+      .button.is-info.is-outlined.is-loading:after {
+        border-color: transparent transparent #3273dc #3273dc !important; }
     .button.is-info.is-inverted.is-outlined {
       background-color: transparent;
       border-color: #fff;
@@ -777,6 +789,8 @@ a.box:active {
         background-color: #23d160;
         border-color: #23d160;
         color: #fff; }
+      .button.is-success.is-outlined.is-loading:after {
+        border-color: transparent transparent #23d160 #23d160 !important; }
     .button.is-success.is-inverted.is-outlined {
       background-color: transparent;
       border-color: #fff;
@@ -816,6 +830,8 @@ a.box:active {
         background-color: #ffdd57;
         border-color: #ffdd57;
         color: rgba(0, 0, 0, 0.7); }
+      .button.is-warning.is-outlined.is-loading:after {
+        border-color: transparent transparent #ffdd57 #ffdd57 !important; }
     .button.is-warning.is-inverted.is-outlined {
       background-color: transparent;
       border-color: rgba(0, 0, 0, 0.7);
@@ -855,6 +871,8 @@ a.box:active {
         background-color: #ff3860;
         border-color: #ff3860;
         color: #fff; }
+      .button.is-danger.is-outlined.is-loading:after {
+        border-color: transparent transparent #ff3860 #ff3860 !important; }
     .button.is-danger.is-inverted.is-outlined {
       background-color: transparent;
       border-color: #fff;
@@ -4046,6 +4064,29 @@ label.panel-block {
 @media screen and (min-width: 1192px) {
   .container {
     max-width: 900px; } }
+
+.logo {
+  max-height: 70vh;
+  max-width: 150px; }
+  .logo-typo {
+    font-family: 'EB Garamond', serif;
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 3em;
+    display: block;
+    word-break: break-all;
+    text-align: justify;
+    margin: 140px;
+    text-transform: uppercase; }
+
+.logo-mobile {
+  color: black;
+  font-family: "Times New Roman", serif;
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 3px;
+  margin-right: -3.5rem; }
 
 .menu.nav-item {
   display: block; }
