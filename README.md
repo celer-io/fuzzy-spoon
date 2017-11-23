@@ -18,12 +18,22 @@ Sources of charlottethomas.fr website (currently in development)
 	hexo clean
 	hexo generate
 	echo demo.charlottethomas.fr > public/CNAME
-	git commit -am 'generate new version'
+	git commit -am 'generate new integration version'
 	git push
-	<!-- git subtree push --prefix public/ origin gh-pages -->
 	git push origin `git subtree split --prefix public master`:gh-pages --force
+	*After doing that, new integration version should be available [here](https://demo.charlottethomas.fr/)*
 
-*After doing that, an new integration version should be available [here](https://demo.charlottethomas.fr/)*
+### Deploy to prod
+	hexo clean
+	hexo generate
+	echo charlottethomas.fr > public/CNAME
+	git commit -am 'generate new prod version'
+	git tag <version> // TODO
+	git push
+	git push git@github.com:charlottethomas/charlottethomas.github.io.git `git subtree split --prefix public master`:master ?(--force)
+
+	*After doing new prod version should be available [here](https://charlottethomas.fr/)*
+
 
 ### Bach resize images
 	`cd <path to images folder>`
@@ -59,7 +69,7 @@ Sources of charlottethomas.fr website (currently in development)
 	- [x] Fix loading timeout and disabled by default
 	- [ ] Mobile (with img-touch-canvas)
 - [ ]	Add show nav on scroll up
-- [ ] Add Js ramda utils (for templating and client code)
+<!-- - [ ] Add Js ramda utils (for templating and client code) -->
 - [ ] SEO
 	- [ ] Sitemap
 	- [ ] Metas
@@ -68,10 +78,9 @@ Sources of charlottethomas.fr website (currently in development)
 - [ ] I18n
 
 ### Later
-- [ ] Improve build-deploy-integ workflow (with tagging and shit)
-- [ ] Add build-deploy-prod workflow (try a node script for this)
-	- [ ] CNAME
-	- [ ] dynamic yaml config (url, root...)
+- [ ] Write scripts (node? bash? ook?) for build-deploy workflows and put in npm scripts
+	- [ ] dynamic CNAME
+	- [ ] basic readme
 - [ ] Investigate submodule workflow
 - [ ] Reorganize git repos
 - [ ] Put theme in git submodule
