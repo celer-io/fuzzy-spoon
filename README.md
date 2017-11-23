@@ -10,18 +10,20 @@ Sources of charlottethomas.fr website (currently in development)
 	npm install
 	cd theme/slow
 	npm install
-	cd ../..
-	TODO: Investigate git sumbodules workflow
+	cd ../.. 			// TODO: Investigate git sumbodules workflow
 	hexo serve --debug
 
 
 ### Build and deploy to integration
+	hexo clean
 	hexo generate
+	echo demo.charlottethomas.fr > public/CNAME
 	git commit -am 'generate new version'
 	git push
-	git subtree push --prefix public/ origin gh-pages
+	<!-- git subtree push --prefix public/ origin gh-pages -->
+	git push origin `git subtree split --prefix public master`:gh-pages --force
 
-*After doing that, an new integration version should be available [here](https://crucialhawg.github.io/fuzzy-spoon/)*
+*After doing that, an new integration version should be available [here](https://demo.charlottethomas.fr/)*
 
 ### Bach resize images
 	`cd <path to images folder>`
