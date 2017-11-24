@@ -21,8 +21,8 @@ Sources of charlottethomas.fr website (currently in development)
 	git commit -am 'generate version'
 	git push
 	echo demo.charlottethomas.fr > public/CNAME
+	git commit -am 'Update CNAME'
 	git push origin `git subtree split --prefix public master`:gh-pages --force
-	rm public/CNAME
 
 	*After doing that, new integration version should be available [here](https://demo.charlottethomas.fr/)*
 
