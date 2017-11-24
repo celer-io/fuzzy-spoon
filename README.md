@@ -17,24 +17,21 @@ Sources of charlottethomas.fr website (currently in development)
 ### Build and deploy to integration
 	hexo clean
 	hexo generate
-	git aa
-	git commit -am 'generate version'
-	git push
 	echo demo.charlottethomas.fr > public/CNAME
-	git commit -am 'Update CNAME'
+	git add public
+	git commit -m 'generate new integration version'
+	git push
 	git push origin `git subtree split --prefix public master`:gh-pages --force
 
 	*After doing that, new integration version should be available [here](https://demo.charlottethomas.fr/)*
 
 ### Deploy to prod
-	<!-- hexo clean
-	hexo generate -->
-	<!-- git commit -am 'generate new prod version' -->
-	<!-- git tag <version> // TODO -->
-	<!-- git push -->
-
-
+	hexo clean
+	hexo generate
 	echo charlottethomas.fr > public/CNAME
+	git add public
+	git commit -m 'generate new prod version'
+	git push
 	git push git@github.com:charlottethomas/charlottethomas.github.io.git `git subtree split --prefix public master`:master ?(--force)
 
 	*After doing new prod version should be available [here](https://charlottethomas.fr/)*
