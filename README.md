@@ -18,6 +18,7 @@ Sources of charlottethomas.fr website (currently in development)
 	hexo clean
 	hexo generate
 	echo demo.charlottethomas.fr > public/CNAME
+	git aa
 	git commit -am 'generate new integration version'
 	git push
 	git push origin `git subtree split --prefix public master`:gh-pages --force
