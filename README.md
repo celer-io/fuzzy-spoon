@@ -32,7 +32,16 @@ Sources of charlottethomas.fr website (currently in development)
 	git add public
 	git commit -m 'generate new prod version'
 	git push
-	git push git@github.com:charlottethomas/charlottethomas.github.io.git `git subtree split --prefix public master`:master ?(--force)
+	git push git@github.com:charlottethomas/charlottethomas.github.io.git `git subtree split --prefix public master`:master --force
+This last command sould work but is very slow as it rewrite entire charlottethomas.github.io.git repo history, see below for alternative
+	cd ../charlottethomas.github.io
+	cp -r ../fuzzy-spoon/public/* ./
+	git aa
+	git ci -am '<new version number>'
+	git push
+
+
+
 
 	*After doing new prod version should be available [here](https://charlottethomas.fr/)*
 
