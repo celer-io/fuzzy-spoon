@@ -1,5 +1,5 @@
 ---
-title: Et terre
+title: Impermanence
 date: 1999-12-31 00:00:00
 category: lin
 
@@ -7,15 +7,15 @@ top_works:
   - cartel: "\"Impermanence\"<br/>Fil de lin blanchi"
     zoomable: true
     images:
-      - et-terre_1
+      - impermanence_1
   - cartel: "\"Impermanence\"<br/>Fil de lin blanchi"
     zoomable: true
     images:
-      - et-terre_2
+      - impermanence_2
   - cartel: "\"Impermanence\"<br/>Fil de lin blanchi"
     zoomable: true
     images:
-      - et-terre_3
+      - impermanence_3
 ---
 
 Retranscrire l'impermanence.

@@ -8,15 +8,43 @@ Sources of charlottethomas.fr website (currently in development)
 ## Some commands workflow
 ### Install en develop
 	npm install
+	cd theme/slow
+	npm install
+	cd ../.. 			// TODO: Investigate git sumbodules workflow
 	hexo serve --debug
 
-### Build and deploy to integration
-	hexo generate
-	git commit -am 'generate new version'
-	git push
-	git subtree push --prefix public/ origin gh-pages
 
-*After doing that, an new integration version should be available [here](https://crucialhawg.github.io/fuzzy-spoon/)*
+### Build and deploy to integration
+	hexo clean
+	hexo generate
+	echo demo.charlottethomas.fr > public/CNAME
+	git add public
+	git commit -m 'generate new integration version'
+	git push
+	git push origin `git subtree split --prefix public master`:gh-pages --force
+
+	*After doing that, new integration version should be available [here](https://demo.charlottethomas.fr/)*
+
+### Deploy to prod
+	hexo clean
+	hexo generate
+	echo charlottethomas.fr > public/CNAME
+	git add public
+	git commit -m 'generate new prod version'
+	git push
+	git push git@github.com:charlottethomas/charlottethomas.github.io.git `git subtree split --prefix public master`:master --force
+This last command sould work but is very slow as it rewrite entire charlottethomas.github.io.git repo history, see below for alternative
+	cd ../charlottethomas.github.io
+	cp -r ../fuzzy-spoon/public/* ./
+	git aa
+	git ci -am '<new version number>'
+	git push
+
+
+
+
+	*After doing new prod version should be available [here](https://charlottethomas.fr/)*
+
 
 ### Bach resize images
 	`cd <path to images folder>`
@@ -52,7 +80,7 @@ Sources of charlottethomas.fr website (currently in development)
 	- [x] Fix loading timeout and disabled by default
 	- [ ] Mobile (with img-touch-canvas)
 - [ ]	Add show nav on scroll up
-- [ ] Add Js ramda utils (for templating and client code)
+<!-- - [ ] Add Js ramda utils (for templating and client code) -->
 - [ ] SEO
 	- [ ] Sitemap
 	- [ ] Metas
@@ -61,10 +89,9 @@ Sources of charlottethomas.fr website (currently in development)
 - [ ] I18n
 
 ### Later
-- [ ] Improve build-deploy-integ workflow (with tagging and shit)
-- [ ] Add build-deploy-prod workflow (try a node script for this)
-	- [ ] CNAME
-	- [ ] dynamic yaml config (url, root...)
+- [ ] Write scripts (node? bash? ook?) for build-deploy workflows and put in npm scripts
+	- [ ] dynamic CNAME
+	- [ ] basic readme
 - [ ] Investigate submodule workflow
 - [ ] Reorganize git repos
 - [ ] Put theme in git submodule

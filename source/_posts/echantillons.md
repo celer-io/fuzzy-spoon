@@ -1,6 +1,6 @@
 ---
 title: Échantillons
-date: 2000-01-05 00:00:00
+date: 2000-01-02 00:00:00
 category: lin & crin
 
 top_works:
